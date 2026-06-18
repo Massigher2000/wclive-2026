@@ -132,9 +132,17 @@
   .group-team-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 14px; }
   .group-pts { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--yellow); }
 
-  .ad-slot { background: var(--black4); border: 1px dashed var(--gray2); border-radius: 8px; display: flex; align-items: center; justify-content: center; padding: 24px; margin-bottom: 40px; color: var(--gray2); font-family: 'Barlow Condensed', sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; text-align: center; flex-direction: column; gap: 6px; min-height: 90px; }
-  .ad-slot-tall { min-height: 250px; }
-  .ad-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gray2); margin-bottom: 4px; }
+  /* AD STYLES */
+  .ad-container { display: flex; justify-content: center; align-items: center; margin-bottom: 40px; overflow: hidden; }
+  .ad-container iframe { border: none; max-width: 100%; }
+  .ad-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gray2); text-align: center; margin-bottom: 8px; font-family: 'Barlow Condensed', sans-serif; }
+  .ad-sidebar-wrap { display: flex; gap: 20px; }
+  .ad-sidebar { flex-shrink: 0; display: none; }
+  .ad-main { flex: 1; min-width: 0; }
+  
+  @media (min-width: 1100px) {
+    .ad-sidebar { display: block; }
+  }
 
   #modal-overlay { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; padding: 20px; }
   #modal-overlay.open { display: flex; }
@@ -173,6 +181,8 @@
     .teams-display { flex-direction: column; gap: 8px; }
     .score-display { font-size: 28px; }
     table thead th:nth-child(3), table td:nth-child(3) { display: none; }
+    .ad-sidebar-wrap { flex-direction: column; }
+    .ad-sidebar { display: none !important; }
   }
 </style>
 </head>
@@ -227,79 +237,187 @@
 </section>
 
 <main>
-  <div class="section" style="padding-top:32px;">
-    <div class="ad-slot">
+
+<!-- AD 1: 728x90 Leaderboard (Top) -->
+<div class="section" style="padding-top:32px;">
+  <div class="ad-label">Advertisement</div>
+  <div class="ad-container">
+    <script>
+      atOptions = {
+        'key' : '11e1813061e88bbecfcab063a27a93e3',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/11e1813061e88bbecfcab063a27a93e3/invoke.js"></script>
+  </div>
+</div>
+
+<!-- AD 2: 320x50 Mobile Banner (Only visible on mobile) -->
+<div class="section" style="padding-top:16px; display:none;" id="mobile-ad-top">
+  <div class="ad-label">Advertisement</div>
+  <div class="ad-container">
+    <script>
+      atOptions = {
+        'key' : '53c99342dbfee3802241606ec2f5a390',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/53c99342dbfee3802241606ec2f5a390/invoke.js"></script>
+  </div>
+</div>
+
+<div class="section" id="live">
+  <div class="section-header">
+    <div class="section-header-bar"></div>
+    <h2>Live Now</h2>
+    <span class="tag" id="live-count">● Loading...</span>
+  </div>
+  <div id="featured-match-container"></div>
+  <div class="match-grid" id="live-grid"></div>
+  <div class="last-updated" id="live-updated"></div>
+</div>
+
+<!-- AD 3: 300x250 Rectangle (Mid-page) -->
+<div class="section">
+  <div class="ad-label">Advertisement</div>
+  <div class="ad-container">
+    <script>
+      atOptions = {
+        'key' : 'f3eb2eed15cb2fc4fc8db89dc75b2f87',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/f3eb2eed15cb2fc8fc8db89dc75b2f87/invoke.js"></script>
+  </div>
+</div>
+
+<div class="ad-sidebar-wrap section">
+  
+  <!-- AD 4: 160x600 Wide Skyscraper (Left Sidebar - Desktop only) -->
+  <div class="ad-sidebar">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-container" style="margin-bottom:0;">
+      <script>
+        atOptions = {
+          'key' : 'b807a02cfc526c27c310f419ce2460ef',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highperformanceformat.com/b807a02cfc526c27c310f419ce2460ef/invoke.js"></script>
+    </div>
+  </div>
+
+  <div class="ad-main">
+
+    <div class="section" id="upcoming" style="padding:0;">
+      <div class="section-header">
+        <div class="section-header-bar"></div>
+        <h2>Upcoming Matches</h2>
+        <span class="tag" id="upcoming-tag">Today</span>
+      </div>
+      <div class="match-grid" id="upcoming-grid"></div>
+    </div>
+
+    <!-- AD 5: 300x250 Rectangle (Between sections) -->
+    <div style="margin-bottom:40px;">
       <div class="ad-label">Advertisement</div>
-      <div>728×90 — Leaderboard Ad</div>
+      <div class="ad-container" style="margin-bottom:0;">
+        <script>
+          atOptions = {
+            'key' : 'f3eb2eed15cb2fc8fc8db89dc75b2f87',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/f3eb2eed15cb2fc8fc8db89dc75b2f87/invoke.js"></script>
+      </div>
+    </div>
+
+    <div class="section" id="standings" style="padding:0;">
+      <div class="section-header">
+        <div class="section-header-bar"></div>
+        <h2>Group Standings</h2>
+        <span class="tag">Group Stage</span>
+      </div>
+      <div class="standings-grid" id="standings-grid"></div>
+    </div>
+
+    <div class="section" id="schedule" style="padding:0;">
+      <div class="section-header">
+        <div class="section-header-bar"></div>
+        <h2>Full Schedule</h2>
+        <span class="tag">All Matches</span>
+      </div>
+      <div class="schedule-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Match</th>
+              <th>Your Local Time</th>
+              <th>Venue</th>
+              <th>Group</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="schedule-body"></tbody>
+        </table>
+      </div>
+      <div class="last-updated" id="schedule-updated"></div>
+    </div>
+
+  </div>
+
+  <!-- AD 6: 160x300 Half Page (Right Sidebar - Desktop only) -->
+  <div class="ad-sidebar">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-container" style="margin-bottom:0;">
+      <script>
+        atOptions = {
+          'key' : 'd9121dd4332617dca801a1d9bfa24f92',
+          'format' : 'iframe',
+          'height' : 300,
+          'width' : 160,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highperformanceformat.com/d9121dd4332617dca801a1d9bfa24f92/invoke.js"></script>
     </div>
   </div>
 
-  <div class="section" id="live">
-    <div class="section-header">
-      <div class="section-header-bar"></div>
-      <h2>Live Now</h2>
-      <span class="tag" id="live-count">● Loading...</span>
-    </div>
-    <div id="featured-match-container"></div>
-    <div class="match-grid" id="live-grid"></div>
-    <div class="last-updated" id="live-updated"></div>
-  </div>
+</div>
 
-  <div class="section">
-    <div class="ad-slot ad-slot-tall">
-      <div class="ad-label">Advertisement / Content Locker</div>
-      <div>300×250 — Rectangle Ad · Place your OG Ads code here</div>
-    </div>
+<!-- AD 7: 728x90 Leaderboard (Bottom) -->
+<div class="section">
+  <div class="ad-label">Advertisement</div>
+  <div class="ad-container">
+    <script>
+      atOptions = {
+        'key' : '11e1813061e88bbecfcab063a27a93e3',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/11e1813061e88bbecfcab063a27a93e3/invoke.js"></script>
   </div>
+</div>
 
-  <div class="section" id="upcoming">
-    <div class="section-header">
-      <div class="section-header-bar"></div>
-      <h2>Upcoming Matches</h2>
-      <span class="tag" id="upcoming-tag">Today</span>
-    </div>
-    <div class="match-grid" id="upcoming-grid"></div>
-  </div>
-
-  <div class="section" id="standings">
-    <div class="section-header">
-      <div class="section-header-bar"></div>
-      <h2>Group Standings</h2>
-      <span class="tag">Group Stage</span>
-    </div>
-    <div class="standings-grid" id="standings-grid"></div>
-  </div>
-
-  <div class="section" id="schedule">
-    <div class="section-header">
-      <div class="section-header-bar"></div>
-      <h2>Full Schedule</h2>
-      <span class="tag">All Matches</span>
-    </div>
-    <div class="schedule-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Match</th>
-            <th>Your Local Time</th>
-            <th>Venue</th>
-            <th>Group</th>
-            <th>Status</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="schedule-body"></tbody>
-      </table>
-    </div>
-    <div class="last-updated" id="schedule-updated"></div>
-  </div>
-
-  <div class="section">
-    <div class="ad-slot" style="margin-bottom:56px;">
-      <div class="ad-label">Advertisement</div>
-      <div>728×90 — Leaderboard Ad</div>
-    </div>
-  </div>
 </main>
 
 <footer>
@@ -327,6 +445,11 @@
 </div>
 
 <script>
+  // Show mobile ad on small screens
+  if (window.innerWidth < 640) {
+    document.getElementById('mobile-ad-top').style.display = 'block';
+  }
+
   const CONFIG = {
     DATA_URL: './scores.json',
     REFRESH_INTERVAL: 30000,
@@ -336,7 +459,7 @@
   function flagImg(url, alt, size = 'md') {
     if (!url) return '';
     const cls = size === 'lg' ? 'team-flag-img' : (size === 'sm' ? 'match-team-flag-img' : 'group-team-flag-img');
-    return `<img src="${url}" alt="${alt}" class="${cls}" loading="lazy" onerror="this.style.display='none'">`;
+    return `<img src="${url}" alt="${alt}" class="${cls}" loading="lazy" onerror="this.style.display='none'; this.onerror=null;">`;
   }
 
   function toLocalTime(utcDateStr) {
