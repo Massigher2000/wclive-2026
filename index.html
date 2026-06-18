@@ -74,7 +74,7 @@
   .featured-footer { padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
   .teams-display { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; }
   .team-name { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; }
-  .team-flag { font-size: 28px; line-height: 1; }
+  .team-flag-img { width: 36px; height: 24px; object-fit: contain; border-radius: 2px; }
   .score-display { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--yellow); letter-spacing: 6px; }
   .live-pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,59,59,0.15); border: 1px solid rgba(255,59,59,0.4); color: var(--red-live); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; padding: 4px 12px; border-radius: 4px; }
   .upcoming-pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,214,0,0.1); border: 1px solid rgba(255,214,0,0.3); color: var(--yellow); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; padding: 4px 12px; border-radius: 4px; }
@@ -95,7 +95,7 @@
   .match-teams-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
   .match-team-row { display: flex; align-items: center; gap: 10px; flex: 1; }
   .match-team-row.away { justify-content: flex-end; }
-  .match-team-flag { font-size: 24px; line-height: 1; }
+  .match-team-flag-img { width: 28px; height: 20px; object-fit: contain; border-radius: 2px; }
   .match-team-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; }
   .match-center { text-align: center; min-width: 80px; }
   .match-score-big { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--yellow); letter-spacing: 3px; }
@@ -128,7 +128,7 @@
   .group-table th:first-child { text-align: left; padding-left: 16px; }
   .group-table td { padding: 8px 12px; font-size: 13px; text-align: center; border-top: 1px solid rgba(255,255,255,0.03); }
   .group-table td:first-child { text-align: left; padding-left: 16px; display: flex; align-items: center; gap: 8px; }
-  .group-team-flag { font-size: 18px; }
+  .group-team-flag-img { width: 24px; height: 16px; object-fit: contain; border-radius: 2px; }
   .group-team-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 14px; }
   .group-pts { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--yellow); }
 
@@ -333,6 +333,12 @@
     STREAM_URL: 'https://www.youtube.com/embed/jfKfPfyJRdk'
   };
 
+  function flagImg(url, alt, size = 'md') {
+    if (!url) return '';
+    const cls = size === 'lg' ? 'team-flag-img' : (size === 'sm' ? 'match-team-flag-img' : 'group-team-flag-img');
+    return `<img src="${url}" alt="${alt}" class="${cls}" loading="lazy" onerror="this.style.display='none'">`;
+  }
+
   function toLocalTime(utcDateStr) {
     const d = new Date(utcDateStr);
     return {
@@ -419,7 +425,7 @@
         <span class="match-meta">${match.group || 'World Cup'} · ${match.venue || 'TBD'}</span>
       </div>
       <div class="featured-embed">
-        <div class="embed-placeholder" onclick="openStream('${CONFIG.STREAM_URL}', '${match.homeTeam.flag} ${match.homeTeam.name} vs ${match.awayTeam.name} ${match.awayTeam.flag}')">
+        <div class="embed-placeholder" onclick="openStream('${CONFIG.STREAM_URL}', '${match.homeTeam.name} vs ${match.awayTeam.name}')">
           <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
             <circle cx="40" cy="40" r="38" fill="rgba(0,0,0,0.4)" stroke="rgba(255,214,0,0.4)" stroke-width="1.5"/>
             <polygon points="31,22 62,40 31,58" fill="#FFD600"/>
@@ -429,9 +435,9 @@
       </div>
       <div class="featured-footer">
         <div class="teams-display">
-          <span class="team-name"><span class="team-flag">${match.homeTeam.flag}</span> ${match.homeTeam.name}</span>
+          <span class="team-name">${flagImg(match.homeTeam.flag, match.homeTeam.name, 'lg')} ${match.homeTeam.name}</span>
           <span class="score-display">${scoreDisplay}</span>
-          <span class="team-name">${match.awayTeam.name} <span class="team-flag">${match.awayTeam.flag}</span></span>
+          <span class="team-name">${match.awayTeam.name} ${flagImg(match.awayTeam.flag, match.awayTeam.name, 'lg')}</span>
         </div>
         <span class="${pillClass}">
           ${pillDot}
@@ -469,7 +475,7 @@
         : `<span class="upcoming-pill" style="font-size:10px;padding:3px 8px;">${local.isToday ? 'TODAY' : (local.isTomorrow ? 'TOMORROW' : local.date.toUpperCase())}</span>`);
 
     return `
-    <div class="match-card" onclick="openStream('${CONFIG.STREAM_URL}', '${match.homeTeam.flag} ${match.homeTeam.name} vs ${match.awayTeam.name} ${match.awayTeam.flag}')">
+    <div class="match-card" onclick="openStream('${CONFIG.STREAM_URL}', '${match.homeTeam.name} vs ${match.awayTeam.name}')">
       <div class="match-card-top">
         <span class="group-label">${match.group || 'World Cup'}</span>
         ${statusPill}
@@ -486,13 +492,13 @@
       <div class="match-card-body">
         <div class="match-teams-row">
           <div class="match-team-row">
-            <span class="match-team-flag">${match.homeTeam.flag}</span>
+            ${flagImg(match.homeTeam.flag, match.homeTeam.name, 'sm')}
             <span class="match-team-name">${match.homeTeam.name}</span>
           </div>
           <div class="match-center">${centerContent}</div>
           <div class="match-team-row away">
             <span class="match-team-name">${match.awayTeam.name}</span>
-            <span class="match-team-flag">${match.awayTeam.flag}</span>
+            ${flagImg(match.awayTeam.flag, match.awayTeam.name, 'sm')}
           </div>
         </div>
         <div class="match-status-row">${statusContent}</div>
@@ -522,7 +528,7 @@
       : `<button class="watch-btn watch-btn-secondary" onclick="openStream('${CONFIG.STREAM_URL}','${match.homeTeam.name} vs ${match.awayTeam.name}')">Stream</button>`;
 
     return `<tr>
-      <td class="td-match">${match.homeTeam.flag} ${match.homeTeam.name} ${scoreDisplay} <span style="color:var(--text-muted);font-size:13px;">vs</span> ${match.awayTeam.name} ${match.awayTeam.flag}</td>
+      <td class="td-match">${flagImg(match.homeTeam.flag, match.homeTeam.name, 'sm')} ${match.homeTeam.name} ${scoreDisplay} <span style="color:var(--text-muted);font-size:13px;">vs</span> ${match.awayTeam.name} ${flagImg(match.awayTeam.flag, match.awayTeam.name, 'sm')}</td>
       <td class="td-time">${local.full}</td>
       <td class="td-time">${match.venue || 'TBD'}</td>
       <td><span style="background:var(--black4);color:var(--text-muted);font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;padding:3px 10px;border-radius:4px;font-weight:700;">${match.group || 'WC'}</span></td>
@@ -539,7 +545,7 @@
     return standings.map(group => {
       const table = group.table.map((team, i) => `
         <tr>
-          <td><span class="group-team-flag">${team.team.flag || team.team.crest || '🏳️'}</span> <span class="group-team-name">${team.team.name || team.team.shortName}</span></td>
+          <td>${flagImg(team.team.flag, team.team.name, 'sm')} <span class="group-team-name">${team.team.name || team.team.shortName}</span></td>
           <td>${team.playedGames}</td>
           <td>${team.won}</td>
           <td>${team.draw}</td>
@@ -645,12 +651,12 @@
     let items = [];
     
     live.forEach(m => {
-      items.push(`${m.homeTeam.flag} ${m.homeTeam.name} ${m.score.home}–${m.score.away} ${m.awayTeam.name} ${m.awayTeam.flag} · ${formatMinute(m.minute, m.status)}`);
+      items.push(`${m.homeTeam.name} ${m.score.home}–${m.score.away} ${m.awayTeam.name} · ${formatMinute(m.minute, m.status)}`);
     });
     
     upcoming.forEach(m => {
       const local = toLocalTime(m.utcDate);
-      items.push(`${m.homeTeam.flag} ${m.homeTeam.name} vs ${m.awayTeam.name} ${m.awayTeam.flag} · ${local.time}`);
+      items.push(`${m.homeTeam.name} vs ${m.awayTeam.name} · ${local.time}`);
     });
     
     items.push('🏆 FIFA World Cup 2026 · USA · Canada · Mexico');
