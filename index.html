@@ -1,1 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WC Live — World Cup Streams 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --yellow: #FFD600; --yellow-dim: #E6C100; --yellow-glow: rgba(255,214,0,0.15);
+    --black: #0A0A0A; --black2: #111111; --black3: #1A1A1A; --black4: #242424;
+    --gray: #2E2E2E; --gray2: #3D3D3D; --text: #F0F0F0; --text-muted: #888; --red-live: #FF3B3B;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--text); font-family: 'Inter', sans-serif; min-height: 100vh; overflow-x: hidden; }
 
+  #loader { position: fixed; inset: 0; z-index: 9999; background: var(--black); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; transition: opacity 0.6s ease, visibility 0.6s; }
+  #loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+  .loader-logo { font-family: 'Bebas Neue', sans-serif; font-size: 56px; letter-spacing: 4px; color: var(--yellow); }
+  .loader-logo span { color: #fff; }
+  .loader-bar-wrap { width: 200px; height: 3px; background: var(--gray); border-radius: 99px; overflow: hidden; }
+  .loader-bar { height: 100%; background: var(--yellow); border-radius: 99px; animation: loadBar 1.4s ease forwards; }
+  .loader-text { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; letter-spacing: 3px; color: var(--text-muted); text-transform: uppercase; }
+  @keyframes loadBar { from { width: 0 } to { width: 100% } }
+
+  .ticker { background: var(--yellow); color: var(--black); padding: 8px 0; overflow: hidden; position: sticky; top: 0; z-index: 100; }
+  .ticker-inner { display: flex; white-space: nowrap; animation: ticker 30s linear infinite; }
+  .ticker-item { display: inline-flex; align-items: center; gap: 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; padding: 0 32px; }
+  .ticker-dot { width: 6px; height: 6px; background: var(--black); border-radius: 50%; }
+  @keyframes ticker { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+
+  nav { background: var(--black2); border-bottom: 1px solid var(--gray); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 33px; z-index: 99; }
+  .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 2px; color: var(--yellow); text-decoration: none; }
+  .nav-logo span { color: #fff; }
+  .nav-links { display: flex; gap: 8px; list-style: none; }
+  .nav-links a { font-family: 'Barlow Condensed', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); text-decoration: none; padding: 6px 14px; border-radius: 4px; transition: color 0.2s, background 0.2s; }
+  .nav-links a:hover { color: var(--yellow); background: var(--yellow-glow); }
+  .nav-badge { background: var(--red-live); color: #fff; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; padding: 4px 10px; border-radius: 4px; animation: pulseBadge 2s ease-in-out infinite; }
+  @keyframes pulseBadge { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+
+  .hero { background: var(--black2); padding: 64px 24px 56px; text-align: center; border-bottom: 1px solid var(--gray); position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(255,214,0,0.07), transparent); pointer-events: none; }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: var(--yellow-glow); border: 1px solid rgba(255,214,0,0.3); color: var(--yellow); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; padding: 6px 16px; border-radius: 4px; margin-bottom: 24px; }
+  .live-dot { width: 7px; height: 7px; background: var(--red-live); border-radius: 50%; animation: pulseDot 1.5s ease-in-out infinite; }
+  @keyframes pulseDot { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.4); opacity: 0.7; } }
+  .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(56px, 10vw, 120px); letter-spacing: 2px; line-height: 0.9; color: #fff; margin-bottom: 20px; }
+  .hero h1 em { color: var(--yellow); font-style: normal; }
+  .hero-sub { font-size: 15px; color: var(--text-muted); max-width: 480px; margin: 0 auto 36px; line-height: 1.6; }
+  .hero-stats { display: flex; justify-content: center; gap: 0; flex-wrap: wrap; }
+  .hero-stat { padding: 0 32px; border-right: 1px solid var(--gray); }
+  .hero-stat:last-child { border-right: none; }
+  .hero-stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--yellow); line-height: 1; }
+  .hero-stat-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-top: 4px; }
+
+  .section { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .section-header { display: flex; align-items: center; gap: 16px; padding: 48px 0 28px; border-bottom: 1px solid var(--gray); margin-bottom: 32px; }
+  .section-header-bar { width: 4px; height: 28px; background: var(--yellow); border-radius: 2px; flex-shrink: 0; }
+  .section-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 1.5px; color: #fff; }
+  .section-header .tag { margin-left: auto; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); background: var(--black4); padding: 4px 12px; border-radius: 4px; }
+
+  .featured-match { background: var(--black3); border: 1px solid var(--gray); border-radius: 12px; overflow: hidden; margin-bottom: 40px; }
+  .featured-top { background: var(--black4); padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--gray); flex-wrap: wrap; gap: 8px; }
+  .featured-label { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--yellow); }
+  .match-meta { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; color: var(--text-muted); letter-spacing: 1px; }
+  .featured-embed { position: relative; padding-bottom: 50%; background: #000; }
+  .featured-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+  .embed-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: var(--black3); cursor: pointer; }
+  .embed-placeholder svg { width: 72px; height: 72px; fill: var(--yellow); opacity: 0.9; transition: transform 0.2s, opacity 0.2s; }
+  .embed-placeholder:hover svg { transform: scale(1.08); opacity: 1; }
+  .embed-placeholder-text { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); }
+  .featured-footer { padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .teams-display { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; }
+  .team-name { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; }
+  .team-flag { font-size: 28px; line-height: 1; }
+  .score-display { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--yellow); letter-spacing: 6px; }
+  .live-pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,59,59,0.15); border: 1px solid rgba(255,59,59,0.4); color: var(--red-live); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; padding: 4px 12px; border-radius: 4px; }
+  .upcoming-pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,214,0,0.1); border: 1px solid rgba(255,214,0,0.3); color: var(--yellow); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; padding: 4px 12px; border-radius: 4px; }
+  .finished-pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(136,136,136,0.1); border: 1px solid rgba(136,136,136,0.3); color: var(--text-muted); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; padding: 4px 12px; border-radius: 4px; }
+
+  .match-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 20px; margin-bottom: 56px; }
+  .match-card { background: var(--black3); border: 1px solid var(--gray); border-radius: 10px; overflow: hidden; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; cursor: pointer; }
+  .match-card:hover { border-color: rgba(255,214,0,0.4); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(255,214,0,0.05); }
+  .match-card-top { background: var(--black4); padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--gray); }
+  .group-label { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); }
+  .card-embed { position: relative; padding-bottom: 56.25%; background: #000; }
+  .card-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+  .card-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: var(--black3); }
+  .card-placeholder svg { width: 48px; height: 48px; fill: var(--yellow); opacity: 0.8; transition: transform 0.2s; }
+  .match-card:hover .card-placeholder svg { transform: scale(1.1); }
+  .card-play-text { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); }
+  .match-card-body { padding: 16px; }
+  .match-teams-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+  .match-team-row { display: flex; align-items: center; gap: 10px; flex: 1; }
+  .match-team-row.away { justify-content: flex-end; }
+  .match-team-flag { font-size: 24px; line-height: 1; }
+  .match-team-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; }
+  .match-center { text-align: center; min-width: 80px; }
+  .match-score-big { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--yellow); letter-spacing: 3px; }
+  .match-vs { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--yellow); letter-spacing: 2px; opacity: 0.6; }
+  .match-status-row { display: flex; align-items: center; justify-content: center; gap: 8px; padding-top: 8px; border-top: 1px solid var(--gray); }
+  .match-time-user { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; color: var(--text-muted); }
+  .match-minute { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--red-live); }
+  .match-date { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; color: var(--text-muted); }
+
+  .schedule-wrap { background: var(--black3); border: 1px solid var(--gray); border-radius: 10px; overflow: hidden; margin-bottom: 56px; }
+  table { width: 100%; border-collapse: collapse; }
+  thead th { background: var(--black4); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); padding: 12px 20px; text-align: left; border-bottom: 1px solid var(--gray); }
+  tbody tr { border-bottom: 1px solid var(--gray); transition: background 0.15s; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--black4); }
+  td { padding: 14px 20px; font-size: 14px; color: var(--text); }
+  td.td-match { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; }
+  td.td-time { font-family: 'Barlow Condensed', sans-serif; font-size: 14px; color: var(--text-muted); white-space: nowrap; }
+  td.td-btn { text-align: right; }
+  .watch-btn { display: inline-flex; align-items: center; gap: 6px; background: var(--yellow); color: var(--black); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 7px 16px; border-radius: 5px; text-decoration: none; transition: background 0.15s, transform 0.15s; cursor: pointer; border: none; }
+  .watch-btn:hover { background: var(--yellow-dim); transform: scale(0.98); }
+  .watch-btn svg { width: 14px; height: 14px; }
+  .watch-btn-secondary { background: var(--black4); color: var(--text-muted); border: 1px solid var(--gray); }
+
+  .standings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 56px; }
+  .group-card { background: var(--black3); border: 1px solid var(--gray); border-radius: 10px; overflow: hidden; }
+  .group-header { background: var(--black4); padding: 12px 16px; font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 2px; color: var(--yellow); border-bottom: 1px solid var(--gray); }
+  .group-table { width: 100%; }
+  .group-table th { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); padding: 8px 12px; text-align: center; font-weight: 700; }
+  .group-table th:first-child { text-align: left; padding-left: 16px; }
+  .group-table td { padding: 8px 12px; font-size: 13px; text-align: center; border-top: 1px solid rgba(255,255,255,0.03); }
+  .group-table td:first-child { text-align: left; padding-left: 16px; display: flex; align-items: center; gap: 8px; }
+  .group-team-flag { font-size: 18px; }
+  .group-team-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 14px; }
+  .group-pts { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--yellow); }
+
+  .ad-slot { background: var(--black4); border: 1px dashed var(--gray2); border-radius: 8px; display: flex; align-items: center; justify-content: center; padding: 24px; margin-bottom: 40px; color: var(--gray2); font-family: 'Barlow Condensed', sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; text-align: center; flex-direction: column; gap: 6px; min-height: 90px; }
+  .ad-slot-tall { min-height: 250px; }
+  .ad-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gray2); margin-bottom: 4px; }
+
+  #modal-overlay { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; padding: 20px; }
+  #modal-overlay.open { display: flex; }
+  .modal-box { background: var(--black3); border: 1px solid var(--gray); border-radius: 12px; width: 100%; max-width: 900px; overflow: hidden; animation: modalIn 0.25s ease; }
+  @keyframes modalIn { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  .modal-header { background: var(--black4); padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--gray); }
+  .modal-title { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 1px; color: var(--yellow); }
+  .modal-close { background: none; border: 1px solid var(--gray); color: var(--text-muted); width: 32px; height: 32px; border-radius: 6px; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: border-color 0.15s, color 0.15s; }
+  .modal-close:hover { border-color: var(--yellow); color: var(--yellow); }
+  .modal-embed { position: relative; padding-bottom: 56.25%; }
+  .modal-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+
+  footer { background: var(--black2); border-top: 1px solid var(--gray); padding: 40px 24px; text-align: center; }
+  .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 2px; color: var(--yellow); margin-bottom: 12px; }
+  .footer-logo span { color: #fff; }
+  .footer-text { font-size: 13px; color: var(--text-muted); max-width: 520px; margin: 0 auto 20px; line-height: 1.6; }
+  .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
+  .footer-links a { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
+  .footer-links a:hover { color: var(--yellow); }
+  .footer-copy { font-size: 11px; color: #444; letter-spacing: 1px; }
+
+  .api-error { background: rgba(255,59,59,0.1); border: 1px solid rgba(255,59,59,0.3); color: var(--red-live); padding: 16px; border-radius: 8px; text-align: center; font-family: 'Barlow Condensed', sans-serif; margin-bottom: 20px; }
+  .api-loading { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 40px; color: var(--text-muted); font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; }
+  .spinner { width: 20px; height: 20px; border: 2px solid var(--gray); border-top-color: var(--yellow); border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .last-updated { text-align: center; font-size: 11px; color: #444; margin-top: 8px; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 1px; }
+
+  @media (max-width: 640px) {
+    .hero { padding: 40px 16px 36px; }
+    .hero-stat { padding: 0 16px; }
+    .match-grid { grid-template-columns: 1fr; }
+    .standings-grid { grid-template-columns: 1fr; }
+    nav { padding: 0 16px; }
+    .nav-links { display: none; }
+    .section { padding: 0 16px; }
+    .teams-display { flex-direction: column; gap: 8px; }
+    .score-display { font-size: 28px; }
+    table thead th:nth-child(3), table td:nth-child(3) { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-logo">WC<span>Live</span></div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-text">Loading streams&hellip;</div>
+</div>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner" id="ticker-inner"></div>
+</div>
+
+<nav>
+  <a href="#" class="nav-logo">WC<span>Live</span></a>
+  <ul class="nav-links">
+    <li><a href="#live">Live Now</a></li>
+    <li><a href="#upcoming">Upcoming</a></li>
+    <li><a href="#standings">Standings</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+  </ul>
+  <div class="nav-badge">● Live</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">
+    <span class="live-dot"></span>
+    World Cup 2026 — Free Live Streams
+  </div>
+  <h1>Watch the<br><em>World Cup</em><br>Live</h1>
+  <p class="hero-sub">Stream every match of the 2026 FIFA World Cup. No subscription, no signup — just click and watch.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num" id="stat-matches">48</div>
+      <div class="hero-stat-label">Group Matches</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num" id="stat-teams">32</div>
+      <div class="hero-stat-label">Nations</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">3</div>
+      <div class="hero-stat-label">Host Countries</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">HD</div>
+      <div class="hero-stat-label">Stream Quality</div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="section" style="padding-top:32px;">
+    <div class="ad-slot">
+      <div class="ad-label">Advertisement</div>
+      <div>728×90 — Leaderboard Ad</div>
+    </div>
+  </div>
+
+  <div class="section" id="live">
+    <div class="section-header">
+      <div class="section-header-bar"></div>
+      <h2>Live Now</h2>
+      <span class="tag" id="live-count">● Loading...</span>
+    </div>
+    <div id="featured-match-container"></div>
+    <div class="match-grid" id="live-grid"></div>
+    <div class="last-updated" id="live-updated"></div>
+  </div>
+
+  <div class="section">
+    <div class="ad-slot ad-slot-tall">
+      <div class="ad-label">Advertisement / Content Locker</div>
+      <div>300×250 — Rectangle Ad · Place your OG Ads code here</div>
+    </div>
+  </div>
+
+  <div class="section" id="upcoming">
+    <div class="section-header">
+      <div class="section-header-bar"></div>
+      <h2>Upcoming Matches</h2>
+      <span class="tag" id="upcoming-tag">Today</span>
+    </div>
+    <div class="match-grid" id="upcoming-grid"></div>
+  </div>
+
+  <div class="section" id="standings">
+    <div class="section-header">
+      <div class="section-header-bar"></div>
+      <h2>Group Standings</h2>
+      <span class="tag">Group Stage</span>
+    </div>
+    <div class="standings-grid" id="standings-grid"></div>
+  </div>
+
+  <div class="section" id="schedule">
+    <div class="section-header">
+      <div class="section-header-bar"></div>
+      <h2>Full Schedule</h2>
+      <span class="tag">All Matches</span>
+    </div>
+    <div class="schedule-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Match</th>
+            <th>Your Local Time</th>
+            <th>Venue</th>
+            <th>Group</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="schedule-body"></tbody>
+      </table>
+    </div>
+    <div class="last-updated" id="schedule-updated"></div>
+  </div>
+
+  <div class="section">
+    <div class="ad-slot" style="margin-bottom:56px;">
+      <div class="ad-label">Advertisement</div>
+      <div>728×90 — Leaderboard Ad</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-logo">WC<span>Live</span></div>
+  <p class="footer-text">WC Live aggregates publicly available match information and embeds third-party streams for entertainment purposes. We do not host any video content.</p>
+  <div class="footer-links">
+    <a href="#">DMCA</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 WCLive · All rights reserved</div>
+</footer>
+
+<div id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title">Match Stream</div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-embed">
+      <iframe id="modal-iframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  const CONFIG = {
+    DATA_URL: './scores.json',
+    REFRESH_INTERVAL: 30000,
+    STREAM_URL: 'https://www.youtube.com/embed/jfKfPfyJRdk'
+  };
+
+  function toLocalTime(utcDateStr) {
+    const d = new Date(utcDateStr);
+    return {
+      time: d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true }),
+      date: d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }),
+      full: d.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true }),
+      relative: getRelativeTime(d),
+      isToday: isToday(d),
+      isTomorrow: isTomorrow(d)
+    };
+  }
+
+  function isToday(d) {
+    const now = new Date();
+    return d.toDateString() === now.toDateString();
+  }
+
+  function isTomorrow(d) {
+    const now = new Date();
+    const tmr = new Date(now);
+    tmr.setDate(tmr.getDate() + 1);
+    return d.toDateString() === tmr.toDateString();
+  }
+
+  function getRelativeTime(d) {
+    const now = new Date();
+    const diffMs = d - now;
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHours = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+    if (diffMins < 0) return 'Started';
+    if (diffMins < 60) return `in ${diffMins}m`;
+    if (diffHours < 24) return `in ${diffHours}h`;
+    return `in ${diffDays}d`;
+  }
+
+  function formatMinute(minute, status) {
+    if (!minute) return '';
+    if (status === 'FINISHED') return 'FT';
+    if (status === 'PAUSED') return 'HT';
+    if (status === 'IN_PLAY') return minute + "'";
+    return '';
+  }
+
+  let currentData = null;
+  let lastFetch = 0;
+
+  async function loadScores(force = false) {
+    const now = Date.now();
+    if (!force && currentData && (now - lastFetch < 15000)) {
+      return currentData;
+    }
+    try {
+      const url = CONFIG.DATA_URL + '?t=' + now;
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
+      currentData = data;
+      lastFetch = now;
+      return data;
+    } catch (error) {
+      console.error('Failed to load scores:', error);
+      if (currentData) return currentData;
+      throw error;
+    }
+  }
+
+  function renderFeaturedMatch(match) {
+    const local = toLocalTime(match.utcDate);
+    const scoreDisplay = match.isLive || match.isFinished
+      ? `${match.score.home} – ${match.score.away}`
+      : 'VS';
+    const statusText = match.isLive 
+      ? `LIVE · ${formatMinute(match.minute, match.status)}`
+      : (match.isFinished ? 'FULL TIME' : local.full);
+
+    const pillClass = match.isLive ? 'live-pill' : (match.isFinished ? 'finished-pill' : 'upcoming-pill');
+    const pillDot = match.isLive ? '<span class="live-dot" style="width:5px;height:5px;background:var(--red-live);"></span>' : '';
+
+    return `
+    <div class="featured-match">
+      <div class="featured-top">
+        <span class="featured-label">⚡ ${match.isLive ? 'LIVE NOW' : (match.isFinished ? 'FINISHED' : 'FEATURED MATCH')}</span>
+        <span class="match-meta">${match.group || 'World Cup'} · ${match.venue || 'TBD'}</span>
+      </div>
+      <div class="featured-embed">
+        <div class="embed-placeholder" onclick="openStream('${CONFIG.STREAM_URL}', '${match.homeTeam.flag} ${match.homeTeam.name} vs ${match.awayTeam.name} ${match.awayTeam.flag}')">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="38" fill="rgba(0,0,0,0.4)" stroke="rgba(255,214,0,0.4)" stroke-width="1.5"/>
+            <polygon points="31,22 62,40 31,58" fill="#FFD600"/>
+          </svg>
+          <div class="embed-placeholder-text">${match.isLive ? '▶ Click to Watch Live' : '▶ Watch Stream'}</div>
+        </div>
+      </div>
+      <div class="featured-footer">
+        <div class="teams-display">
+          <span class="team-name"><span class="team-flag">${match.homeTeam.flag}</span> ${match.homeTeam.name}</span>
+          <span class="score-display">${scoreDisplay}</span>
+          <span class="team-name">${match.awayTeam.name} <span class="team-flag">${match.awayTeam.flag}</span></span>
+        </div>
+        <span class="${pillClass}">
+          ${pillDot}
+          ${statusText}
+        </span>
+      </div>
+    </div>`;
+  }
+
+  function renderMatchCard(match) {
+    const local = toLocalTime(match.utcDate);
+    let centerContent, statusContent;
+    
+    if (match.isLive) {
+      centerContent = `<div class="match-score-big">${match.score.home} – ${match.score.away}</div>`;
+      statusContent = `
+        <span class="live-dot" style="width:6px;height:6px;"></span>
+        <span class="match-minute">${formatMinute(match.minute, match.status)}</span>
+        <span class="match-time-user">· ${local.time}</span>`;
+    } else if (match.isFinished) {
+      centerContent = `<div class="match-score-big">${match.score.home} – ${match.score.away}</div>`;
+      statusContent = `<span class="match-time-user">FT · ${local.date}</span>`;
+    } else {
+      centerContent = `<div class="match-vs">VS</div>`;
+      statusContent = `
+        <span class="match-time-user">${local.time}</span>
+        <span style="color:var(--gray2);">·</span>
+        <span class="match-time-user" style="color:var(--yellow);">${local.relative}</span>`;
+    }
+
+    const statusPill = match.isLive 
+      ? `<span class="live-pill" style="font-size:10px;padding:3px 8px;"><span style="width:5px;height:5px;background:var(--red-live);border-radius:50%;display:inline-block;animation:pulseDot 1.5s ease-in-out infinite;"></span> LIVE</span>`
+      : (match.isFinished 
+        ? `<span class="finished-pill" style="font-size:10px;padding:3px 8px;">FINISHED</span>`
+        : `<span class="upcoming-pill" style="font-size:10px;padding:3px 8px;">${local.isToday ? 'TODAY' : (local.isTomorrow ? 'TOMORROW' : local.date.toUpperCase())}</span>`);
+
+    return `
+    <div class="match-card" onclick="openStream('${CONFIG.STREAM_URL}', '${match.homeTeam.flag} ${match.homeTeam.name} vs ${match.awayTeam.name} ${match.awayTeam.flag}')">
+      <div class="match-card-top">
+        <span class="group-label">${match.group || 'World Cup'}</span>
+        ${statusPill}
+      </div>
+      <div class="card-embed">
+        <div class="card-placeholder">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="29" fill="rgba(0,0,0,0.3)" stroke="rgba(255,214,0,0.3)" stroke-width="1"/>
+            <polygon points="23,16 47,30 23,44" fill="#FFD600"/>
+          </svg>
+          <div class="card-play-text">${match.isLive ? 'Watch Live' : 'Watch Stream'}</div>
+        </div>
+      </div>
+      <div class="match-card-body">
+        <div class="match-teams-row">
+          <div class="match-team-row">
+            <span class="match-team-flag">${match.homeTeam.flag}</span>
+            <span class="match-team-name">${match.homeTeam.name}</span>
+          </div>
+          <div class="match-center">${centerContent}</div>
+          <div class="match-team-row away">
+            <span class="match-team-name">${match.awayTeam.name}</span>
+            <span class="match-team-flag">${match.awayTeam.flag}</span>
+          </div>
+        </div>
+        <div class="match-status-row">${statusContent}</div>
+      </div>
+    </div>`;
+  }
+
+  function renderScheduleRow(match) {
+    const local = toLocalTime(match.utcDate);
+    const hasScore = match.score.home !== null;
+    let scoreDisplay = '';
+    if (hasScore) {
+      scoreDisplay = ` <span style="color:var(--yellow);font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;">${match.score.home} – ${match.score.away}</span>`;
+    }
+
+    let statusBadge;
+    if (match.isLive) {
+      statusBadge = `<span style="color:var(--red-live);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;">● LIVE ${match.minute ? match.minute+"'" : ''}</span>`;
+    } else if (match.isFinished) {
+      statusBadge = `<span style="color:var(--text-muted);font-family:'Barlow Condensed',sans-serif;font-size:11px;">FT</span>`;
+    } else {
+      statusBadge = `<span style="color:var(--yellow);font-family:'Barlow Condensed',sans-serif;font-size:11px;">${local.relative}</span>`;
+    }
+
+    const btn = match.isLive
+      ? `<button class="watch-btn" onclick="openStream('${CONFIG.STREAM_URL}','${match.homeTeam.name} vs ${match.awayTeam.name}')"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Watch</button>`
+      : `<button class="watch-btn watch-btn-secondary" onclick="openStream('${CONFIG.STREAM_URL}','${match.homeTeam.name} vs ${match.awayTeam.name}')">Stream</button>`;
+
+    return `<tr>
+      <td class="td-match">${match.homeTeam.flag} ${match.homeTeam.name} ${scoreDisplay} <span style="color:var(--text-muted);font-size:13px;">vs</span> ${match.awayTeam.name} ${match.awayTeam.flag}</td>
+      <td class="td-time">${local.full}</td>
+      <td class="td-time">${match.venue || 'TBD'}</td>
+      <td><span style="background:var(--black4);color:var(--text-muted);font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;padding:3px 10px;border-radius:4px;font-weight:700;">${match.group || 'WC'}</span></td>
+      <td class="td-time">${statusBadge}</td>
+      <td class="td-btn">${btn}</td>
+    </tr>`;
+  }
+
+  function renderGroupStandings(standings) {
+    if (!standings || !standings.length) {
+      return '<div style="color:var(--text-muted);padding:20px;text-align:center;">Group standings will appear once the tournament begins.</div>';
+    }
+
+    return standings.map(group => {
+      const table = group.table.map((team, i) => `
+        <tr>
+          <td><span class="group-team-flag">${team.team.flag || team.team.crest || '🏳️'}</span> <span class="group-team-name">${team.team.name || team.team.shortName}</span></td>
+          <td>${team.playedGames}</td>
+          <td>${team.won}</td>
+          <td>${team.draw}</td>
+          <td>${team.lost}</td>
+          <td>${team.goalsFor}:${team.goalsAgainst}</td>
+          <td><span class="group-pts">${team.points}</span></td>
+        </tr>
+      `).join('');
+
+      return `
+      <div class="group-card">
+        <div class="group-header">${group.group || 'GROUP'}</div>
+        <table class="group-table">
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>${table}</tbody>
+        </table>
+      </div>`;
+    }).join('');
+  }
+
+  async function renderAll() {
+    const container = document.getElementById('live-grid');
+    const upcomingContainer = document.getElementById('upcoming-grid');
+    const scheduleBody = document.getElementById('schedule-body');
+    const featuredContainer = document.getElementById('featured-match-container');
+    const standingsContainer = document.getElementById('standings-grid');
+    const liveCount = document.getElementById('live-count');
+    const upcomingTag = document.getElementById('upcoming-tag');
+
+    container.innerHTML = '<div class="api-loading"><div class="spinner"></div>Loading live matches...</div>';
+    upcomingContainer.innerHTML = '<div class="api-loading"><div class="spinner"></div>Loading upcoming...</div>';
+    scheduleBody.innerHTML = '<tr><td colspan="6" class="api-loading"><div class="spinner"></div>Loading schedule...</td></tr>';
+    standingsContainer.innerHTML = '<div class="api-loading"><div class="spinner"></div>Loading standings...</div>';
+
+    try {
+      const data = await loadScores();
+      const matches = data.matches || [];
+      
+      const liveMatches = matches.filter(m => m.isLive);
+      const upcomingMatches = matches.filter(m => m.isScheduled).sort((a, b) => new Date(a.utcDate) - new Date(b.utcDate));
+      const finishedMatches = matches.filter(m => m.isFinished);
+      
+      document.getElementById('stat-matches').textContent = data.meta?.totalMatches || matches.length;
+      document.getElementById('stat-teams').textContent = '32';
+      
+      liveCount.textContent = liveMatches.length > 0 
+        ? `● ${liveMatches.length} LIVE` 
+        : '● No live matches';
+      
+      if (liveMatches.length > 0) {
+        featuredContainer.innerHTML = renderFeaturedMatch(liveMatches[0]);
+        container.innerHTML = liveMatches.slice(1).map(renderMatchCard).join('') 
+          || '<div style="color:var(--text-muted);padding:20px;text-align:center;">No other live matches.</div>';
+      } else if (upcomingMatches.length > 0) {
+        featuredContainer.innerHTML = renderFeaturedMatch(upcomingMatches[0]);
+        container.innerHTML = '<div style="color:var(--text-muted);padding:20px;text-align:center;">No matches currently live. Next match featured above.</div>';
+      } else {
+        featuredContainer.innerHTML = '<div class="api-error">No matches scheduled at this time.</div>';
+        container.innerHTML = '';
+      }
+
+      const upcomingToShow = liveMatches.length > 0 ? upcomingMatches.slice(0, 4) : upcomingMatches.slice(1, 5);
+      if (upcomingToShow.length > 0) {
+        upcomingContainer.innerHTML = upcomingToShow.map(renderMatchCard).join('');
+        const firstUpcoming = toLocalTime(upcomingToShow[0].utcDate);
+        upcomingTag.textContent = firstUpcoming.isToday ? 'TODAY' : firstUpcoming.date.toUpperCase();
+      } else {
+        upcomingContainer.innerHTML = '<div style="color:var(--text-muted);padding:20px;text-align:center;">No upcoming matches scheduled.</div>';
+      }
+
+      standingsContainer.innerHTML = renderGroupStandings(data.standings);
+
+      const allSorted = [...matches].sort((a, b) => new Date(a.utcDate) - new Date(b.utcDate));
+      scheduleBody.innerHTML = allSorted.map(renderScheduleRow).join('');
+
+      const updated = new Date(data.updatedAt);
+      const updatedText = `Last updated: ${updated.toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:true})} · Auto-refresh every 30s`;
+      document.getElementById('live-updated').textContent = updatedText;
+      document.getElementById('schedule-updated').textContent = updatedText;
+
+      updateTicker(matches);
+
+    } catch (error) {
+      console.error('Render error:', error);
+      const errorMsg = `<div class="api-error">⚠️ Could not load data. Retrying in 30 seconds...</div>`;
+      featuredContainer.innerHTML = errorMsg;
+      container.innerHTML = errorMsg;
+      upcomingContainer.innerHTML = errorMsg;
+      standingsContainer.innerHTML = errorMsg;
+    }
+  }
+
+  function updateTicker(matches) {
+    const t = document.getElementById('ticker-inner');
+    const live = matches.filter(m => m.isLive);
+    const upcoming = matches.filter(m => m.isScheduled).slice(0, 4);
+    
+    let items = [];
+    
+    live.forEach(m => {
+      items.push(`${m.homeTeam.flag} ${m.homeTeam.name} ${m.score.home}–${m.score.away} ${m.awayTeam.name} ${m.awayTeam.flag} · ${formatMinute(m.minute, m.status)}`);
+    });
+    
+    upcoming.forEach(m => {
+      const local = toLocalTime(m.utcDate);
+      items.push(`${m.homeTeam.flag} ${m.homeTeam.name} vs ${m.awayTeam.name} ${m.awayTeam.flag} · ${local.time}`);
+    });
+    
+    items.push('🏆 FIFA World Cup 2026 · USA · Canada · Mexico');
+    items.push('⚽ 48 matches · 32 teams · 3 host nations');
+    items.push('📺 WC Live · Free Streams · No signup required');
+    
+    const doubled = [...items, ...items];
+    t.innerHTML = doubled.map(i => `<span class="ticker-item"><span class="ticker-dot"></span>${i}</span>`).join('');
+  }
+
+  function openStream(url, title) {
+    document.getElementById('modal-iframe').src = url + '?autoplay=1&rel=0';
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeModal(e) {
+    if (e && e.target !== document.getElementById('modal-overlay')) return;
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.getElementById('modal-iframe').src = '';
+    document.body.style.overflow = '';
+  }
+  
+  document.addEventListener('keydown', e => { 
+    if (e.key === 'Escape') { 
+      document.getElementById('modal-overlay').classList.remove('open'); 
+      document.getElementById('modal-iframe').src=''; 
+      document.body.style.overflow=''; 
+    }
+  });
+
+  window.addEventListener('load', () => {
+    setTimeout(() => document.getElementById('loader').classList.add('hidden'), 1200);
+    renderAll();
+    setInterval(() => { renderAll(); }, CONFIG.REFRESH_INTERVAL);
+  });
+</script>
+</body>
+</html>
