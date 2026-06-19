@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T20:48:38.102Z",
+  "updatedAt": "2026-06-19T21:52:33.197Z",
   "matches": [
     {
       "id": 537327,
@@ -883,7 +883,7 @@
         "tla": "AUS",
         "flag": "https://crests.football-data.org/779.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-19T19:00:00Z",
       "group": "GROUP_D",
@@ -896,8 +896,8 @@
         "home": 2,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 75,
-    "finishedMatches": 28
+    "finishedMatches": 29
   }
 }
