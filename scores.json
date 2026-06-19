@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T21:52:33.197Z",
+  "updatedAt": "2026-06-19T22:40:50.904Z",
   "matches": [
     {
       "id": 537327,
@@ -914,22 +914,22 @@
         "tla": "MAR",
         "flag": "https://crests.football-data.org/morocco.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-19T22:00:00Z",
       "group": "GROUP_C",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "halfTimeScore": {
         "home": null,
         "away": null
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537341,
@@ -3371,32 +3371,32 @@
         {
           "position": 1,
           "team": {
-            "name": "Scotland",
-            "shortName": "Scotland",
-            "tla": "SCO",
-            "flag": "https://crests.football-data.org/814.svg"
-          },
-          "playedGames": 1,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 1,
-          "goalsAgainst": 0
-        },
-        {
-          "position": 2,
-          "team": {
             "name": "Morocco",
             "shortName": "Morocco",
             "tla": "MAR",
             "flag": "https://crests.football-data.org/morocco.svg"
           },
-          "playedGames": 1,
-          "won": 0,
+          "playedGames": 2,
+          "won": 1,
           "draw": 1,
           "lost": 0,
-          "points": 1,
+          "points": 4,
+          "goalsFor": 2,
+          "goalsAgainst": 1
+        },
+        {
+          "position": 2,
+          "team": {
+            "name": "Scotland",
+            "shortName": "Scotland",
+            "tla": "SCO",
+            "flag": "https://crests.football-data.org/814.svg"
+          },
+          "playedGames": 2,
+          "won": 1,
+          "draw": 0,
+          "lost": 1,
+          "points": 3,
           "goalsFor": 1,
           "goalsAgainst": 1
         },
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 75,
+    "liveMatches": 1,
+    "upcomingMatches": 74,
     "finishedMatches": 29
   }
 }
