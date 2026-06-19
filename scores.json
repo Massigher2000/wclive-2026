@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T00:02:04.838Z",
+  "updatedAt": "2026-06-19T04:57:39.546Z",
   "matches": [
     {
       "id": 537327,
@@ -821,7 +821,7 @@
         "tla": "QAT",
         "flag": "https://crests.football-data.org/8030.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-18T22:00:00Z",
       "group": "GROUP_B",
@@ -834,8 +834,8 @@
         "home": 3,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -852,22 +852,22 @@
         "tla": "KOR",
         "flag": "https://crests.football-data.org/772.png"
       },
-      "status": "TIMED",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-19T01:00:00Z",
       "group": "GROUP_A",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "isLive": false,
-      "isFinished": false,
-      "isScheduled": true
+      "isFinished": true,
+      "isScheduled": false
     },
     {
       "id": 537348,
@@ -3238,12 +3238,12 @@
             "tla": "MEX",
             "flag": "https://crests.football-data.org/769.svg"
           },
-          "playedGames": 1,
-          "won": 1,
+          "playedGames": 2,
+          "won": 2,
           "draw": 0,
           "lost": 0,
-          "points": 3,
-          "goalsFor": 2,
+          "points": 6,
+          "goalsFor": 3,
           "goalsAgainst": 0
         },
         {
@@ -3254,13 +3254,13 @@
             "tla": "KOR",
             "flag": "https://crests.football-data.org/772.png"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "won": 1,
           "draw": 0,
-          "lost": 0,
+          "lost": 1,
           "points": 3,
           "goalsFor": 2,
-          "goalsAgainst": 1
+          "goalsAgainst": 2
         },
         {
           "position": 3,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
-    "upcomingMatches": 77,
-    "finishedMatches": 26
+    "liveMatches": 0,
+    "upcomingMatches": 76,
+    "finishedMatches": 28
   }
 }
