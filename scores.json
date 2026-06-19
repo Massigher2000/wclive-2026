@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T12:56:28.709Z",
+  "updatedAt": "2026-06-19T15:55:58.875Z",
   "matches": [
     {
       "id": 537327,
@@ -446,7 +446,7 @@
       "awayTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "status": "FINISHED",
@@ -1184,7 +1184,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -1928,7 +1928,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
