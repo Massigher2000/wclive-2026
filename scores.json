@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T20:44:45.293Z",
+  "updatedAt": "2026-06-20T21:53:13.706Z",
   "matches": [
     {
       "id": 537327,
@@ -1044,12 +1044,12 @@
       "group": "GROUP_E",
       "venue": "TBD",
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "isLive": true,
       "isFinished": false,
@@ -3509,6 +3509,22 @@
         {
           "position": 1,
           "team": {
+            "name": "Ivory Coast",
+            "shortName": "Ivory Coast",
+            "tla": "CIV",
+            "flag": "https://crests.football-data.org/787.svg"
+          },
+          "playedGames": 2,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 2,
+          "goalsAgainst": 0
+        },
+        {
+          "position": 2,
+          "team": {
             "name": "Germany",
             "shortName": "Germany",
             "tla": "GER",
@@ -3516,27 +3532,11 @@
           },
           "playedGames": 2,
           "won": 1,
-          "draw": 1,
-          "lost": 0,
-          "points": 4,
+          "draw": 0,
+          "lost": 1,
+          "points": 3,
           "goalsFor": 7,
-          "goalsAgainst": 1
-        },
-        {
-          "position": 2,
-          "team": {
-            "name": "Ivory Coast",
-            "shortName": "Ivory Coast",
-            "tla": "CIV",
-            "flag": "https://crests.football-data.org/787.svg"
-          },
-          "playedGames": 2,
-          "won": 1,
-          "draw": 1,
-          "lost": 0,
-          "points": 4,
-          "goalsFor": 1,
-          "goalsAgainst": 0
+          "goalsAgainst": 2
         },
         {
           "position": 3,
