@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T23:45:17.536Z",
+  "updatedAt": "2026-06-20T01:52:05.881Z",
   "matches": [
     {
       "id": 537327,
@@ -914,7 +914,7 @@
         "tla": "MAR",
         "flag": "https://crests.football-data.org/morocco.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-19T22:00:00Z",
       "group": "GROUP_C",
@@ -927,8 +927,8 @@
         "home": 0,
         "away": 1
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -945,22 +945,22 @@
         "tla": "HAI",
         "flag": "https://crests.football-data.org/haiti.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-20T00:30:00Z",
       "group": "GROUP_C",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537347,
@@ -3387,6 +3387,22 @@
         {
           "position": 2,
           "team": {
+            "name": "Brazil",
+            "shortName": "Brazil",
+            "tla": "BRA",
+            "flag": "https://crests.football-data.org/764.svg"
+          },
+          "playedGames": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 4,
+          "goalsAgainst": 1
+        },
+        {
+          "position": 3,
+          "team": {
             "name": "Scotland",
             "shortName": "Scotland",
             "tla": "SCO",
@@ -3401,22 +3417,6 @@
           "goalsAgainst": 1
         },
         {
-          "position": 3,
-          "team": {
-            "name": "Brazil",
-            "shortName": "Brazil",
-            "tla": "BRA",
-            "flag": "https://crests.football-data.org/764.svg"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 1
-        },
-        {
           "position": 4,
           "team": {
             "name": "Haiti",
@@ -3424,13 +3424,13 @@
             "tla": "HAI",
             "flag": "https://crests.football-data.org/haiti.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "won": 0,
           "draw": 0,
-          "lost": 1,
+          "lost": 2,
           "points": 0,
           "goalsFor": 0,
-          "goalsAgainst": 1
+          "goalsAgainst": 4
         }
       ]
     },
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 1,
-    "upcomingMatches": 74,
-    "finishedMatches": 29
+    "upcomingMatches": 73,
+    "finishedMatches": 30
   }
 }
