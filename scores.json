@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T16:43:21.722Z",
+  "updatedAt": "2026-06-20T17:59:12.899Z",
   "matches": [
     {
       "id": 537327,
@@ -1007,22 +1007,22 @@
         "tla": "SWE",
         "flag": "https://crests.football-data.org/792.svg"
       },
-      "status": "TIMED",
+      "status": "PAUSED",
       "minute": "90",
       "utcDate": "2026-06-20T17:00:00Z",
       "group": "GROUP_F",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537353,
@@ -3578,42 +3578,42 @@
         {
           "position": 1,
           "team": {
-            "name": "Sweden",
-            "shortName": "Sweden",
-            "tla": "SWE",
-            "flag": "https://crests.football-data.org/792.svg"
+            "name": "Netherlands",
+            "shortName": "Netherlands",
+            "tla": "NED",
+            "flag": "https://crests.football-data.org/8601.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 5,
-          "goalsAgainst": 1
-        },
-        {
-          "position": 2,
-          "team": {
-            "name": "Japan",
-            "shortName": "Japan",
-            "tla": "JPN",
-            "flag": "https://crests.football-data.org/766.svg"
-          },
-          "playedGames": 1,
-          "won": 0,
           "draw": 1,
           "lost": 0,
-          "points": 1,
-          "goalsFor": 2,
+          "points": 4,
+          "goalsFor": 4,
           "goalsAgainst": 2
         },
         {
           "position": 2,
           "team": {
-            "name": "Netherlands",
-            "shortName": "Netherlands",
-            "tla": "NED",
-            "flag": "https://crests.football-data.org/8601.svg"
+            "name": "Sweden",
+            "shortName": "Sweden",
+            "tla": "SWE",
+            "flag": "https://crests.football-data.org/792.svg"
+          },
+          "playedGames": 2,
+          "won": 1,
+          "draw": 0,
+          "lost": 1,
+          "points": 3,
+          "goalsFor": 5,
+          "goalsAgainst": 3
+        },
+        {
+          "position": 3,
+          "team": {
+            "name": "Japan",
+            "shortName": "Japan",
+            "tla": "JPN",
+            "flag": "https://crests.football-data.org/766.svg"
           },
           "playedGames": 1,
           "won": 0,
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 0,
-    "upcomingMatches": 72,
+    "upcomingMatches": 71,
     "finishedMatches": 32
   }
 }
