@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T21:53:13.706Z",
+  "updatedAt": "2026-06-20T22:54:03.470Z",
   "matches": [
     {
       "id": 537327,
@@ -446,7 +446,7 @@
       "awayTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "status": "FINISHED",
@@ -1038,21 +1038,21 @@
         "tla": "CIV",
         "flag": "https://crests.football-data.org/787.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-20T20:00:00Z",
       "group": "GROUP_E",
       "venue": "TBD",
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 1
       },
       "halfTimeScore": {
         "home": 0,
         "away": 1
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -1184,7 +1184,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -1928,7 +1928,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -3509,33 +3509,33 @@
         {
           "position": 1,
           "team": {
-            "name": "Ivory Coast",
-            "shortName": "Ivory Coast",
-            "tla": "CIV",
-            "flag": "https://crests.football-data.org/787.svg"
-          },
-          "playedGames": 2,
-          "won": 2,
-          "draw": 0,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 2,
-          "goalsAgainst": 0
-        },
-        {
-          "position": 2,
-          "team": {
             "name": "Germany",
             "shortName": "Germany",
             "tla": "GER",
             "flag": "https://crests.football-data.org/759.svg"
           },
           "playedGames": 2,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 9,
+          "goalsAgainst": 2
+        },
+        {
+          "position": 2,
+          "team": {
+            "name": "Ivory Coast",
+            "shortName": "Ivory Coast",
+            "tla": "CIV",
+            "flag": "https://crests.football-data.org/787.svg"
+          },
+          "playedGames": 2,
           "won": 1,
           "draw": 0,
           "lost": 1,
           "points": 3,
-          "goalsFor": 7,
+          "goalsFor": 2,
           "goalsAgainst": 2
         },
         {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 70,
-    "finishedMatches": 33
+    "finishedMatches": 34
   }
 }
