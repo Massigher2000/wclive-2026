@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T22:02:18.284Z",
+  "updatedAt": "2026-06-21T23:21:36.926Z",
   "matches": [
     {
       "id": 537327,
@@ -1199,12 +1199,12 @@
       "group": "GROUP_H",
       "venue": "TBD",
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 2,
+        "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "isLive": true,
       "isFinished": false,
@@ -3716,6 +3716,22 @@
         {
           "position": 1,
           "team": {
+            "name": "Uruguay",
+            "shortName": "Uruguay",
+            "tla": "URU",
+            "flag": "https://crests.football-data.org/758.svg"
+          },
+          "playedGames": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 3,
+          "goalsAgainst": 2
+        },
+        {
+          "position": 2,
+          "team": {
             "name": "Spain",
             "shortName": "Spain",
             "tla": "ESP",
@@ -3730,39 +3746,7 @@
           "goalsAgainst": 0
         },
         {
-          "position": 2,
-          "team": {
-            "name": "Uruguay",
-            "shortName": "Uruguay",
-            "tla": "URU",
-            "flag": "https://crests.football-data.org/758.svg"
-          },
-          "playedGames": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 1,
-          "goalsAgainst": 1
-        },
-        {
           "position": 3,
-          "team": {
-            "name": "Cape Verde Islands",
-            "shortName": "Cape Verde",
-            "tla": "CPV",
-            "flag": "https://crests.football-data.org/cape_verde.svg"
-          },
-          "playedGames": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 0,
-          "goalsAgainst": 0
-        },
-        {
-          "position": 4,
           "team": {
             "name": "Saudi Arabia",
             "shortName": "Saudi Arabia",
@@ -3776,6 +3760,22 @@
           "points": 1,
           "goalsFor": 1,
           "goalsAgainst": 5
+        },
+        {
+          "position": 4,
+          "team": {
+            "name": "Cape Verde Islands",
+            "shortName": "Cape Verde",
+            "tla": "CPV",
+            "flag": "https://crests.football-data.org/cape_verde.svg"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "points": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2
         }
       ]
     },
