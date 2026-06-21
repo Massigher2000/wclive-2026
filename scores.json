@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T17:55:37.241Z",
+  "updatedAt": "2026-06-21T19:10:08.783Z",
   "matches": [
     {
       "id": 537327,
@@ -1131,21 +1131,21 @@
         "tla": "KSA",
         "flag": "https://crests.football-data.org/saudi_arabia.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-21T16:00:00Z",
       "group": "GROUP_H",
       "venue": "TBD",
       "score": {
-        "home": 4,
+        "home": 5,
         "away": 0
       },
       "halfTimeScore": {
         "home": 3,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -1162,22 +1162,22 @@
         "tla": "IRN",
         "flag": "https://crests.football-data.org/iran.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-21T19:00:00Z",
       "group": "GROUP_G",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
         "home": null,
         "away": null
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537372,
@@ -3647,6 +3647,38 @@
         {
           "position": 1,
           "team": {
+            "name": "Iran",
+            "shortName": "Iran",
+            "tla": "IRN",
+            "flag": "https://crests.football-data.org/iran.svg"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 2,
+          "lost": 0,
+          "points": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 2
+        },
+        {
+          "position": 2,
+          "team": {
+            "name": "Belgium",
+            "shortName": "Belgium",
+            "tla": "BEL",
+            "flag": "https://crests.football-data.org/805.svg"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 2,
+          "lost": 0,
+          "points": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 1
+        },
+        {
+          "position": 3,
+          "team": {
             "name": "New Zealand",
             "shortName": "New Zealand",
             "tla": "NZL",
@@ -3659,38 +3691,6 @@
           "points": 1,
           "goalsFor": 2,
           "goalsAgainst": 2
-        },
-        {
-          "position": 2,
-          "team": {
-            "name": "Iran",
-            "shortName": "Iran",
-            "tla": "IRN",
-            "flag": "https://crests.football-data.org/iran.svg"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2
-        },
-        {
-          "position": 3,
-          "team": {
-            "name": "Belgium",
-            "shortName": "Belgium",
-            "tla": "BEL",
-            "flag": "https://crests.football-data.org/805.svg"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 1
         },
         {
           "position": 4,
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 1,
-    "upcomingMatches": 67,
-    "finishedMatches": 36
+    "upcomingMatches": 66,
+    "finishedMatches": 37
   }
 }
