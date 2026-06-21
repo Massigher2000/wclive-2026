@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T14:39:48.707Z",
+  "updatedAt": "2026-06-21T16:19:06.441Z",
   "matches": [
     {
       "id": 537327,
@@ -1131,22 +1131,22 @@
         "tla": "KSA",
         "flag": "https://crests.football-data.org/saudi_arabia.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-21T16:00:00Z",
       "group": "GROUP_H",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTimeScore": {
         "home": null,
         "away": null
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537365,
@@ -3716,6 +3716,38 @@
         {
           "position": 1,
           "team": {
+            "name": "Saudi Arabia",
+            "shortName": "Saudi Arabia",
+            "tla": "KSA",
+            "flag": "https://crests.football-data.org/saudi_arabia.svg"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 2,
+          "lost": 0,
+          "points": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 1
+        },
+        {
+          "position": 2,
+          "team": {
+            "name": "Spain",
+            "shortName": "Spain",
+            "tla": "ESP",
+            "flag": "https://crests.football-data.org/760.svg"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 2,
+          "lost": 0,
+          "points": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 0
+        },
+        {
+          "position": 3,
+          "team": {
             "name": "Uruguay",
             "shortName": "Uruguay",
             "tla": "URU",
@@ -3728,38 +3760,6 @@
           "points": 1,
           "goalsFor": 1,
           "goalsAgainst": 1
-        },
-        {
-          "position": 2,
-          "team": {
-            "name": "Saudi Arabia",
-            "shortName": "Saudi Arabia",
-            "tla": "KSA",
-            "flag": "https://crests.football-data.org/saudi_arabia.svg"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 1
-        },
-        {
-          "position": 3,
-          "team": {
-            "name": "Spain",
-            "shortName": "Spain",
-            "tla": "ESP",
-            "flag": "https://crests.football-data.org/760.svg"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0
         },
         {
           "position": 4,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 68,
+    "liveMatches": 1,
+    "upcomingMatches": 67,
     "finishedMatches": 36
   }
 }
