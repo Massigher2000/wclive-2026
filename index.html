@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WC Live — World Cup Streams 2026</title>
+<title>BallFoot10 — World Cup Streams 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
@@ -153,118 +153,7 @@
   .modal-embed { position: relative; padding-bottom: 56.25%; }
   .modal-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
 
-  /* LOCKER */
-  #locker-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 500;
-    background: rgba(0,0,0,0.97);
-    align-items: center;
-    justify-content: center;
-  }
-  #locker-overlay.open { display: flex; }
-
-  .locker-box {
-    width: 100%;
-    height: 100%;
-    max-width: 520px;
-    max-height: 90dvh;
-    background: var(--black3);
-    border: 1px solid var(--gray);
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    margin: 16px;
-    animation: modalIn 0.25s ease;
-  }
-  .locker-header {
-    background: var(--black4);
-    border-bottom: 1px solid var(--gray);
-    padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-shrink: 0;
-  }
-  .locker-header-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: var(--yellow);
-  }
-  .locker-header-sub {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-top: 2px;
-  }
-  .locker-embed {
-    flex: 1;
-    overflow: hidden;
-    background: #fff;
-  }
-  .locker-embed iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-  .locker-footer {
-    background: var(--black4);
-    border-top: 1px solid var(--gray);
-    padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-shrink: 0;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .locker-footer-text {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 13px;
-    color: var(--text-muted);
-    letter-spacing: 1px;
-    flex: 1;
-  }
-  .locker-unlock-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: var(--yellow);
-    color: var(--black);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 9px 20px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.15s, opacity 0.15s;
-    white-space: nowrap;
-  }
-  .locker-unlock-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-  }
-  .locker-unlock-btn:not(:disabled):hover {
-    background: var(--yellow-dim);
-  }
-
   @media (max-width: 640px) {
-    #locker-overlay { align-items: flex-end; padding: 0; }
-    .locker-box {
-      max-width: 100%;
-      max-height: 85dvh;
-      margin: 0;
-      border-radius: 16px 16px 0 0;
-    }
     .hero { padding: 40px 16px 36px; }
     .hero-stat { padding: 0 16px; }
     .match-grid { grid-template-columns: 1fr; }
@@ -289,7 +178,7 @@
 <body>
 
 <div id="loader">
-  <div class="loader-logo">WC<span>Live</span></div>
+  <div class="loader-logo">BallFoot<span>10</span></div>
   <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
   <div class="loader-text">Loading streams&hellip;</div>
 </div>
@@ -299,7 +188,7 @@
 </div>
 
 <nav>
-  <a href="#" class="nav-logo">WC<span>Live</span></a>
+  <a href="#" class="nav-logo">BallFoot<span>10</span></a>
   <ul class="nav-links">
     <li><a href="#live">Live Now</a></li>
     <li><a href="#upcoming">Upcoming</a></li>
@@ -322,7 +211,7 @@
       <div class="hero-stat-label">Group Matches</div>
     </div>
     <div class="hero-stat">
-      <div class="hero-stat-num" id="stat-teams">32</div>
+      <div class="hero-stat-num" id="stat-teams">48</div>
       <div class="hero-stat-label">Nations</div>
     </div>
     <div class="hero-stat">
@@ -521,15 +410,15 @@
 </main>
 
 <footer>
-  <div class="footer-logo">WC<span>Live</span></div>
-  <p class="footer-text">WC Live aggregates publicly available match information and embeds third-party streams for entertainment purposes. We do not host any video content.</p>
+  <div class="footer-logo">BallFoot<span>10</span></div>
+  <p class="footer-text">BallFoot10 aggregates publicly available match information and embeds third-party streams for entertainment purposes. We do not host any video content.</p>
   <div class="footer-links">
     <a href="#">DMCA</a>
     <a href="#">Privacy Policy</a>
     <a href="#">Terms of Use</a>
     <a href="#">Contact</a>
   </div>
-  <div class="footer-copy">© 2026 WCLive · All rights reserved</div>
+  <div class="footer-copy">© 2026 BallFoot10 · All rights reserved</div>
 </footer>
 
 <!-- STREAM MODAL -->
@@ -545,39 +434,6 @@
   </div>
 </div>
 
-<!-- LOCKER OVERLAY -->
-<div id="locker-overlay">
-  <div class="locker-box">
-    <div class="locker-header">
-      <div>
-        <div class="locker-header-title">🔒 Unlock Free Stream</div>
-        <div class="locker-header-sub">Complete one offer to continue watching</div>
-      </div>
-    </div>
-    <div class="locker-embed">
-      <iframe
-        id="locker-iframe"
-        src=""
-        scrolling="yes"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="locker-footer">
-      <div class="locker-footer-text" id="locker-footer-text">
-        Please complete the offer above to continue watching.
-      </div>
-      <button
-        class="locker-unlock-btn"
-        id="locker-unlock-btn"
-        disabled
-        onclick="closeLocker()"
-      >
-        🔓 Unlock Stream
-      </button>
-    </div>
-  </div>
-</div>
-
 <script>
   if (window.innerWidth < 640) {
     document.getElementById('mobile-ad-top').style.display = 'block';
@@ -586,7 +442,7 @@
   const CONFIG = {
     DATA_URL: './scores.json',
     REFRESH_INTERVAL: 30000,
-    STREAM_URL: 'https://www.youtube.com/embed/jfKfPfyJRdk'
+    STREAM_URL: 'https://www.youtube.com'
   };
 
   function flagImg(url, alt, size = 'md') {
@@ -838,7 +694,7 @@
       const upcomingMatches = matches.filter(m => m.isScheduled).sort((a, b) => new Date(a.utcDate) - new Date(b.utcDate));
 
       document.getElementById('stat-matches').textContent = data.meta?.totalMatches || matches.length;
-      document.getElementById('stat-teams').textContent = '32';
+      document.getElementById('stat-teams').textContent = '48';
 
       liveCount.textContent = liveMatches.length > 0
         ? `● ${liveMatches.length} LIVE`
@@ -901,67 +757,31 @@
     });
     items.push('🏆 FIFA World Cup 2026 · USA · Canada · Mexico');
     items.push('⚽ 48 matches · 32 teams · 3 host nations');
-    items.push('📺 WC Live · Free Streams · No signup required');
+    items.push('📺 BallFoot10 · Free Streams · No signup required');
     const doubled = [...items, ...items];
     t.innerHTML = doubled.map(i => `<span class="ticker-item"><span class="ticker-dot"></span>${i}</span>`).join('');
   }
 
-  // ─── STREAM + LOCKER LOGIC ───────────────────────────────────────────────
-
-  let streamLockerTimer = null;
+  // ─── STREAM LOGIC ───────────────────────────────────────────────
 
   function openStream(url, title) {
-    // Play stream immediately
     document.getElementById('modal-iframe').src = url + '?autoplay=1&rel=0';
     document.getElementById('modal-title').textContent = title;
     document.getElementById('modal-overlay').classList.add('open');
     document.body.style.overflow = 'hidden';
-
-    // Show locker after 2 minutes
-    clearTimeout(streamLockerTimer);
-    streamLockerTimer = setTimeout(() => {
-      showLocker();
-    }, 120000);
-  }
-
-  function showLocker() {
-    document.getElementById('locker-iframe').src = 'https://appsave.online/cl/i/xp2rg1';
-    document.getElementById('locker-overlay').classList.add('open');
-
-    const btn = document.getElementById('locker-unlock-btn');
-    const footerText = document.getElementById('locker-footer-text');
-
-    btn.disabled = true;
-    footerText.textContent = 'Please complete the offer above to continue watching.';
-
-    setTimeout(() => {
-      btn.disabled = false;
-      footerText.textContent = 'Done? Click Unlock to continue watching.';
-    }, 120000);
-  }
-
-  function closeLocker() {
-    document.getElementById('locker-overlay').classList.remove('open');
-    document.getElementById('locker-iframe').src = '';
   }
 
   function closeModal(e) {
     if (e && e.target !== document.getElementById('modal-overlay')) return;
-    clearTimeout(streamLockerTimer);
     document.getElementById('modal-overlay').classList.remove('open');
-    document.getElementById('locker-overlay').classList.remove('open');
     document.getElementById('modal-iframe').src = '';
-    document.getElementById('locker-iframe').src = '';
     document.body.style.overflow = '';
   }
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
-      clearTimeout(streamLockerTimer);
       document.getElementById('modal-overlay').classList.remove('open');
-      document.getElementById('locker-overlay').classList.remove('open');
       document.getElementById('modal-iframe').src = '';
-      document.getElementById('locker-iframe').src = '';
       document.body.style.overflow = '';
     }
   });
