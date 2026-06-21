@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T16:19:06.441Z",
+  "updatedAt": "2026-06-21T17:55:37.241Z",
   "matches": [
     {
       "id": 537327,
@@ -1137,12 +1137,12 @@
       "group": "GROUP_H",
       "venue": "TBD",
       "score": {
-        "home": 1,
+        "home": 4,
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
       "isLive": true,
       "isFinished": false,
@@ -3716,37 +3716,21 @@
         {
           "position": 1,
           "team": {
-            "name": "Saudi Arabia",
-            "shortName": "Saudi Arabia",
-            "tla": "KSA",
-            "flag": "https://crests.football-data.org/saudi_arabia.svg"
-          },
-          "playedGames": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 1,
-          "goalsAgainst": 1
-        },
-        {
-          "position": 2,
-          "team": {
             "name": "Spain",
             "shortName": "Spain",
             "tla": "ESP",
             "flag": "https://crests.football-data.org/760.svg"
           },
           "playedGames": 2,
-          "won": 0,
-          "draw": 2,
+          "won": 1,
+          "draw": 1,
           "lost": 0,
-          "points": 2,
-          "goalsFor": 0,
+          "points": 4,
+          "goalsFor": 4,
           "goalsAgainst": 0
         },
         {
-          "position": 3,
+          "position": 2,
           "team": {
             "name": "Uruguay",
             "shortName": "Uruguay",
@@ -3760,6 +3744,22 @@
           "points": 1,
           "goalsFor": 1,
           "goalsAgainst": 1
+        },
+        {
+          "position": 3,
+          "team": {
+            "name": "Saudi Arabia",
+            "shortName": "Saudi Arabia",
+            "tla": "KSA",
+            "flag": "https://crests.football-data.org/saudi_arabia.svg"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "points": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 5
         },
         {
           "position": 4,
