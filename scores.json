@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T17:24:27.254Z",
+  "updatedAt": "2026-06-22T20:18:20.743Z",
   "matches": [
     {
       "id": 537327,
@@ -446,7 +446,7 @@
       "awayTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "status": "FINISHED",
@@ -1184,7 +1184,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -1255,21 +1255,21 @@
         "tla": "AUT",
         "flag": "https://crests.football-data.org/816.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-22T17:00:00Z",
       "group": "GROUP_J",
       "venue": "TBD",
       "score": {
-        "home": 0,
+        "home": 2,
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -1928,7 +1928,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -3860,11 +3860,11 @@
             "flag": "https://crests.football-data.org/762.png"
           },
           "playedGames": 2,
-          "won": 1,
-          "draw": 1,
+          "won": 2,
+          "draw": 0,
           "lost": 0,
-          "points": 4,
-          "goalsFor": 3,
+          "points": 6,
+          "goalsFor": 5,
           "goalsAgainst": 0
         },
         {
@@ -3877,11 +3877,11 @@
           },
           "playedGames": 2,
           "won": 1,
-          "draw": 1,
-          "lost": 0,
-          "points": 4,
+          "draw": 0,
+          "lost": 1,
+          "points": 3,
           "goalsFor": 3,
-          "goalsAgainst": 1
+          "goalsAgainst": 3
         },
         {
           "position": 3,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 63,
-    "finishedMatches": 40
+    "finishedMatches": 41
   }
 }
