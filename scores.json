@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T20:18:20.743Z",
+  "updatedAt": "2026-06-22T22:17:20.394Z",
   "matches": [
     {
       "id": 537327,
@@ -1286,22 +1286,22 @@
         "tla": "IRQ",
         "flag": "https://crests.football-data.org/iraq.svg"
       },
-      "status": "TIMED",
+      "status": "PAUSED",
       "minute": "90",
       "utcDate": "2026-06-22T21:00:00Z",
       "group": "GROUP_I",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537394,
@@ -3785,6 +3785,22 @@
         {
           "position": 1,
           "team": {
+            "name": "France",
+            "shortName": "France",
+            "tla": "FRA",
+            "flag": "https://crests.football-data.org/773.svg"
+          },
+          "playedGames": 2,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 4,
+          "goalsAgainst": 1
+        },
+        {
+          "position": 2,
+          "team": {
             "name": "Norway",
             "shortName": "Norway",
             "tla": "NOR",
@@ -3796,22 +3812,6 @@
           "lost": 0,
           "points": 3,
           "goalsFor": 4,
-          "goalsAgainst": 1
-        },
-        {
-          "position": 2,
-          "team": {
-            "name": "France",
-            "shortName": "France",
-            "tla": "FRA",
-            "flag": "https://crests.football-data.org/773.svg"
-          },
-          "playedGames": 1,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 3,
           "goalsAgainst": 1
         },
         {
@@ -3838,13 +3838,13 @@
             "tla": "IRQ",
             "flag": "https://crests.football-data.org/iraq.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "won": 0,
           "draw": 0,
-          "lost": 1,
+          "lost": 2,
           "points": 0,
           "goalsFor": 1,
-          "goalsAgainst": 4
+          "goalsAgainst": 5
         }
       ]
     },
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 0,
-    "upcomingMatches": 63,
+    "upcomingMatches": 62,
     "finishedMatches": 41
   }
 }
