@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T01:34:21.641Z",
+  "updatedAt": "2026-06-23T05:48:23.823Z",
   "matches": [
     {
       "id": 537327,
@@ -260,7 +260,7 @@
       "awayTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "status": "FINISHED",
@@ -446,7 +446,7 @@
       "awayTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "status": "FINISHED",
@@ -1066,7 +1066,7 @@
       "awayTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "status": "FINISHED",
@@ -1184,7 +1184,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -1317,21 +1317,21 @@
         "tla": "SEN",
         "flag": "https://crests.football-data.org/senegal.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-23T00:00:00Z",
       "group": "GROUP_I",
       "venue": "TBD",
       "score": {
         "home": 3,
-        "away": 1
+        "away": 2
       },
       "halfTimeScore": {
         "home": 1,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -1348,22 +1348,22 @@
         "tla": "ALG",
         "flag": "https://crests.football-data.org/algeria.svg"
       },
-      "status": "TIMED",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-23T03:00:00Z",
       "group": "GROUP_J",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "isLive": false,
-      "isFinished": false,
-      "isScheduled": true
+      "isFinished": true,
+      "isScheduled": false
     },
     {
       "id": 537405,
@@ -1711,7 +1711,7 @@
       "homeTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "awayTeam": {
@@ -1928,7 +1928,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -3785,22 +3785,6 @@
         {
           "position": 1,
           "team": {
-            "name": "Norway",
-            "shortName": "Norway",
-            "tla": "NOR",
-            "flag": "https://crests.football-data.org/813.svg"
-          },
-          "playedGames": 2,
-          "won": 2,
-          "draw": 0,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 7,
-          "goalsAgainst": 2
-        },
-        {
-          "position": 2,
-          "team": {
             "name": "France",
             "shortName": "France",
             "tla": "FRA",
@@ -3815,6 +3799,22 @@
           "goalsAgainst": 1
         },
         {
+          "position": 2,
+          "team": {
+            "name": "Norway",
+            "shortName": "Norway",
+            "tla": "NOR",
+            "flag": "https://crests.football-data.org/813.svg"
+          },
+          "playedGames": 2,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 7,
+          "goalsAgainst": 3
+        },
+        {
           "position": 3,
           "team": {
             "name": "Senegal",
@@ -3827,7 +3827,7 @@
           "draw": 0,
           "lost": 2,
           "points": 0,
-          "goalsFor": 2,
+          "goalsFor": 3,
           "goalsAgainst": 6
         },
         {
@@ -3886,34 +3886,34 @@
         {
           "position": 3,
           "team": {
-            "name": "Jordan",
-            "shortName": "Jordan",
-            "tla": "JOR",
-            "flag": "https://crests.football-data.org/8049.png"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 0,
-          "lost": 1,
-          "points": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 3
-        },
-        {
-          "position": 4,
-          "team": {
             "name": "Algeria",
             "shortName": "Algeria",
             "tla": "ALG",
             "flag": "https://crests.football-data.org/algeria.svg"
           },
-          "playedGames": 1,
-          "won": 0,
+          "playedGames": 2,
+          "won": 1,
           "draw": 0,
           "lost": 1,
+          "points": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 4
+        },
+        {
+          "position": 4,
+          "team": {
+            "name": "Jordan",
+            "shortName": "Jordan",
+            "tla": "JOR",
+            "flag": "https://crests.football-data.org/8049.png"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 0,
+          "lost": 2,
           "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 3
+          "goalsFor": 2,
+          "goalsAgainst": 5
         }
       ]
     },
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
-    "upcomingMatches": 61,
-    "finishedMatches": 42
+    "liveMatches": 0,
+    "upcomingMatches": 60,
+    "finishedMatches": 44
   }
 }
