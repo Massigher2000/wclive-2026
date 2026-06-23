@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T16:34:21.849Z",
+  "updatedAt": "2026-06-23T18:24:28.098Z",
   "matches": [
     {
       "id": 537327,
@@ -1379,22 +1379,22 @@
         "tla": "UZB",
         "flag": "https://crests.football-data.org/8070.png"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-23T17:00:00Z",
       "group": "GROUP_K",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537411,
@@ -3923,6 +3923,22 @@
         {
           "position": 1,
           "team": {
+            "name": "Portugal",
+            "shortName": "Portugal",
+            "tla": "POR",
+            "flag": "https://crests.football-data.org/765.svg"
+          },
+          "playedGames": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 4,
+          "goalsAgainst": 1
+        },
+        {
+          "position": 2,
+          "team": {
             "name": "Colombia",
             "shortName": "Colombia",
             "tla": "COL",
@@ -3937,28 +3953,12 @@
           "goalsAgainst": 1
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "name": "Congo DR",
             "shortName": "Congo DR",
             "tla": "COD",
             "flag": "https://crests.football-data.org/congo_dr.svg"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 1
-        },
-        {
-          "position": 2,
-          "team": {
-            "name": "Portugal",
-            "shortName": "Portugal",
-            "tla": "POR",
-            "flag": "https://crests.football-data.org/765.svg"
           },
           "playedGames": 1,
           "won": 0,
@@ -3976,13 +3976,13 @@
             "tla": "UZB",
             "flag": "https://crests.football-data.org/8070.png"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "won": 0,
           "draw": 0,
-          "lost": 1,
+          "lost": 2,
           "points": 0,
           "goalsFor": 1,
-          "goalsAgainst": 3
+          "goalsAgainst": 6
         }
       ]
     },
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 60,
+    "liveMatches": 1,
+    "upcomingMatches": 59,
     "finishedMatches": 44
   }
 }
