@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T23:44:29.049Z",
+  "updatedAt": "2026-06-23T01:34:21.641Z",
   "matches": [
     {
       "id": 537327,
@@ -1286,21 +1286,21 @@
         "tla": "IRQ",
         "flag": "https://crests.football-data.org/iraq.svg"
       },
-      "status": "PAUSED",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-22T21:00:00Z",
       "group": "GROUP_I",
       "venue": "TBD",
       "score": {
-        "home": 1,
+        "home": 3,
         "away": 0
       },
       "halfTimeScore": {
         "home": 1,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -1317,22 +1317,22 @@
         "tla": "SEN",
         "flag": "https://crests.football-data.org/senegal.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-23T00:00:00Z",
       "group": "GROUP_I",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537400,
@@ -3785,6 +3785,22 @@
         {
           "position": 1,
           "team": {
+            "name": "Norway",
+            "shortName": "Norway",
+            "tla": "NOR",
+            "flag": "https://crests.football-data.org/813.svg"
+          },
+          "playedGames": 2,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 7,
+          "goalsAgainst": 2
+        },
+        {
+          "position": 2,
+          "team": {
             "name": "France",
             "shortName": "France",
             "tla": "FRA",
@@ -3795,23 +3811,7 @@
           "draw": 0,
           "lost": 0,
           "points": 6,
-          "goalsFor": 4,
-          "goalsAgainst": 1
-        },
-        {
-          "position": 2,
-          "team": {
-            "name": "Norway",
-            "shortName": "Norway",
-            "tla": "NOR",
-            "flag": "https://crests.football-data.org/813.svg"
-          },
-          "playedGames": 1,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 4,
+          "goalsFor": 6,
           "goalsAgainst": 1
         },
         {
@@ -3822,13 +3822,13 @@
             "tla": "SEN",
             "flag": "https://crests.football-data.org/senegal.svg"
           },
-          "playedGames": 1,
+          "playedGames": 2,
           "won": 0,
           "draw": 0,
-          "lost": 1,
+          "lost": 2,
           "points": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 3
+          "goalsFor": 2,
+          "goalsAgainst": 6
         },
         {
           "position": 4,
@@ -3844,7 +3844,7 @@
           "lost": 2,
           "points": 0,
           "goalsFor": 1,
-          "goalsAgainst": 5
+          "goalsAgainst": 7
         }
       ]
     },
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 62,
-    "finishedMatches": 41
+    "liveMatches": 1,
+    "upcomingMatches": 61,
+    "finishedMatches": 42
   }
 }
