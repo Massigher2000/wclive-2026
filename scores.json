@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T05:48:23.823Z",
+  "updatedAt": "2026-06-23T08:48:55.228Z",
   "matches": [
     {
       "id": 537327,
@@ -260,7 +260,7 @@
       "awayTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "status": "FINISHED",
@@ -446,7 +446,7 @@
       "awayTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "status": "FINISHED",
@@ -1066,7 +1066,7 @@
       "awayTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "status": "FINISHED",
@@ -1184,7 +1184,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -1711,7 +1711,7 @@
       "homeTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "awayTeam": {
@@ -1928,7 +1928,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -2298,10 +2298,10 @@
     {
       "id": 537415,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "flag": "https://crests.football-data.org/759.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2422,10 +2422,10 @@
     {
       "id": 537425,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "tla": "MEX",
+        "flag": "https://crests.football-data.org/769.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2515,10 +2515,10 @@
     {
       "id": 537421,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "United States",
+        "shortName": "USA",
+        "tla": "USA",
+        "flag": "https://crests.football-data.org/usa.svg"
       },
       "awayTeam": {
         "name": null,
