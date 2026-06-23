@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T08:48:55.228Z",
+  "updatedAt": "2026-06-23T11:46:38.615Z",
   "matches": [
     {
       "id": 537327,
@@ -2298,10 +2298,10 @@
     {
       "id": 537415,
       "homeTeam": {
-        "name": "Germany",
-        "shortName": "Germany",
-        "tla": "GER",
-        "flag": "https://crests.football-data.org/759.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -2422,10 +2422,10 @@
     {
       "id": 537425,
       "homeTeam": {
-        "name": "Mexico",
-        "shortName": "Mexico",
-        "tla": "MEX",
-        "flag": "https://crests.football-data.org/769.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -2515,10 +2515,10 @@
     {
       "id": 537421,
       "homeTeam": {
-        "name": "United States",
-        "shortName": "USA",
-        "tla": "USA",
-        "flag": "https://crests.football-data.org/usa.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
