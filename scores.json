@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T11:29:22.402Z",
+  "updatedAt": "2026-06-24T13:35:19.380Z",
   "matches": [
     {
       "id": 537327,
@@ -260,7 +260,7 @@
       "awayTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "status": "FINISHED",
@@ -1066,7 +1066,7 @@
       "awayTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "status": "FINISHED",
@@ -1711,7 +1711,7 @@
       "homeTeam": {
         "name": "Curaçao",
         "shortName": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "flag": "https://crests.football-data.org/curacao.svg"
       },
       "awayTeam": {
