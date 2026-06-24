@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T22:15:19.196Z",
+  "updatedAt": "2026-06-24T23:34:18.507Z",
   "matches": [
     {
       "id": 537327,
@@ -1565,20 +1565,20 @@
         "tla": "HAI",
         "flag": "https://crests.football-data.org/haiti.svg"
       },
-      "status": "LIVE",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-24T22:00:00Z",
       "group": "GROUP_C",
       "venue": "TBD",
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 2,
+        "away": 2
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 2
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
       "isScheduled": false
     },
@@ -1596,20 +1596,20 @@
         "tla": "BRA",
         "flag": "https://crests.football-data.org/764.svg"
       },
-      "status": "LIVE",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-24T22:00:00Z",
       "group": "GROUP_C",
       "venue": "TBD",
       "score": {
         "home": 0,
-        "away": 1
+        "away": 3
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 2
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
       "isScheduled": false
     },
@@ -3377,11 +3377,11 @@
             "flag": "https://crests.football-data.org/764.svg"
           },
           "playedGames": 3,
-          "won": 1,
-          "draw": 2,
+          "won": 2,
+          "draw": 1,
           "lost": 0,
-          "points": 5,
-          "goalsFor": 4,
+          "points": 7,
+          "goalsFor": 7,
           "goalsAgainst": 1
         },
         {
@@ -3397,8 +3397,8 @@
           "draw": 2,
           "lost": 0,
           "points": 5,
-          "goalsFor": 2,
-          "goalsAgainst": 1
+          "goalsFor": 4,
+          "goalsAgainst": 3
         },
         {
           "position": 3,
@@ -3410,11 +3410,11 @@
           },
           "playedGames": 3,
           "won": 1,
-          "draw": 1,
-          "lost": 1,
-          "points": 4,
+          "draw": 0,
+          "lost": 2,
+          "points": 3,
           "goalsFor": 1,
-          "goalsAgainst": 1
+          "goalsAgainst": 4
         },
         {
           "position": 4,
@@ -3429,8 +3429,8 @@
           "draw": 1,
           "lost": 2,
           "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 4
+          "goalsFor": 2,
+          "goalsAgainst": 6
         }
       ]
     },
@@ -4058,7 +4058,7 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
+    "liveMatches": 2,
     "upcomingMatches": 52,
     "finishedMatches": 50
   }
