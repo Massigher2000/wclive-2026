@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T01:33:38.716Z",
+  "updatedAt": "2026-06-25T05:46:28.232Z",
   "matches": [
     {
       "id": 537327,
@@ -83,12 +83,12 @@
       "group": "GROUP_B",
       "venue": "TBD",
       "score": {
-        "home": 1,
-        "away": 1
+        "home": null,
+        "away": null
       },
       "halfTimeScore": {
-        "home": 0,
-        "away": 1
+        "home": null,
+        "away": null
       },
       "isLive": false,
       "isFinished": true,
@@ -446,7 +446,7 @@
       "awayTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "status": "FINISHED",
@@ -1184,7 +1184,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -1627,21 +1627,21 @@
         "tla": "MEX",
         "flag": "https://crests.football-data.org/769.svg"
       },
-      "status": "LIVE",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-25T01:00:00Z",
       "group": "GROUP_A",
       "venue": "TBD",
       "score": {
         "home": 0,
-        "away": 0
+        "away": 3
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "isLive": false,
-      "isFinished": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -1658,21 +1658,21 @@
         "tla": "KOR",
         "flag": "https://crests.football-data.org/772.png"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-25T01:00:00Z",
       "group": "GROUP_A",
       "venue": "TBD",
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -1928,7 +1928,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -2298,10 +2298,10 @@
     {
       "id": 537415,
       "homeTeam": {
-        "name": "Germany",
-        "shortName": "Germany",
-        "tla": "GER",
-        "flag": "https://crests.football-data.org/759.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -2422,10 +2422,10 @@
     {
       "id": 537425,
       "homeTeam": {
-        "name": "Mexico",
-        "shortName": "Mexico",
-        "tla": "MEX",
-        "flag": "https://crests.football-data.org/769.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -2515,10 +2515,10 @@
     {
       "id": 537421,
       "homeTeam": {
-        "name": "United States",
-        "shortName": "USA",
-        "tla": "USA",
-        "flag": "https://crests.football-data.org/usa.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -2670,10 +2670,10 @@
     {
       "id": 537427,
       "homeTeam": {
-        "name": "Argentina",
-        "shortName": "Argentina",
-        "tla": "ARG",
-        "flag": "https://crests.football-data.org/762.png"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -3239,15 +3239,31 @@
             "flag": "https://crests.football-data.org/769.svg"
           },
           "playedGames": 3,
-          "won": 2,
-          "draw": 1,
+          "won": 3,
+          "draw": 0,
           "lost": 0,
-          "points": 7,
-          "goalsFor": 3,
+          "points": 9,
+          "goalsFor": 6,
           "goalsAgainst": 0
         },
         {
           "position": 2,
+          "team": {
+            "name": "South Africa",
+            "shortName": "South Africa",
+            "tla": "RSA",
+            "flag": "https://crests.football-data.org/9396.svg"
+          },
+          "playedGames": 3,
+          "won": 1,
+          "draw": 1,
+          "lost": 1,
+          "points": 4,
+          "goalsFor": 2,
+          "goalsAgainst": 3
+        },
+        {
+          "position": 3,
           "team": {
             "name": "South Korea",
             "shortName": "Korea Republic",
@@ -3256,14 +3272,14 @@
           },
           "playedGames": 3,
           "won": 1,
-          "draw": 1,
-          "lost": 1,
-          "points": 4,
+          "draw": 0,
+          "lost": 2,
+          "points": 3,
           "goalsFor": 2,
-          "goalsAgainst": 2
+          "goalsAgainst": 3
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "name": "Czechia",
             "shortName": "Czechia",
@@ -3272,27 +3288,11 @@
           },
           "playedGames": 3,
           "won": 0,
-          "draw": 2,
-          "lost": 1,
-          "points": 2,
+          "draw": 1,
+          "lost": 2,
+          "points": 1,
           "goalsFor": 2,
-          "goalsAgainst": 3
-        },
-        {
-          "position": 4,
-          "team": {
-            "name": "South Africa",
-            "shortName": "South Africa",
-            "tla": "RSA",
-            "flag": "https://crests.football-data.org/9396.svg"
-          },
-          "playedGames": 3,
-          "won": 0,
-          "draw": 2,
-          "lost": 1,
-          "points": 2,
-          "goalsFor": 1,
-          "goalsAgainst": 3
+          "goalsAgainst": 6
         }
       ]
     },
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 50,
-    "finishedMatches": 52
+    "finishedMatches": 54
   }
 }
