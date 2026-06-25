@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T05:46:28.232Z",
+  "updatedAt": "2026-06-25T08:38:47.291Z",
   "matches": [
     {
       "id": 537327,
@@ -83,12 +83,12 @@
       "group": "GROUP_B",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "isLive": false,
       "isFinished": true,
@@ -446,7 +446,7 @@
       "awayTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "status": "FINISHED",
@@ -1184,7 +1184,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -1928,7 +1928,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
