@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T23:08:44.632Z",
+  "updatedAt": "2026-06-26T00:20:59.565Z",
   "matches": [
     {
       "id": 537327,
@@ -1757,12 +1757,12 @@
       "group": "GROUP_F",
       "venue": "TBD",
       "score": {
-        "home": 0,
-        "away": 1
+        "home": 1,
+        "away": 2
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 2
       },
       "isLive": true,
       "isFinished": false,
@@ -1792,8 +1792,8 @@
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "isLive": true,
       "isFinished": false,
@@ -2298,10 +2298,10 @@
     {
       "id": 537415,
       "homeTeam": {
-        "name": "Germany",
-        "shortName": "Germany",
-        "tla": "GER",
-        "flag": "https://crests.football-data.org/759.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -2422,10 +2422,10 @@
     {
       "id": 537425,
       "homeTeam": {
-        "name": "Mexico",
-        "shortName": "Mexico",
-        "tla": "MEX",
-        "flag": "https://crests.football-data.org/769.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -2515,10 +2515,10 @@
     {
       "id": 537421,
       "homeTeam": {
-        "name": "United States",
-        "shortName": "USA",
-        "tla": "USA",
-        "flag": "https://crests.football-data.org/usa.svg"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -2670,10 +2670,10 @@
     {
       "id": 537427,
       "homeTeam": {
-        "name": "Argentina",
-        "shortName": "Argentina",
-        "tla": "ARG",
-        "flag": "https://crests.football-data.org/762.png"
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "flag": ""
       },
       "awayTeam": {
         "name": null,
@@ -3584,11 +3584,11 @@
             "flag": "https://crests.football-data.org/8601.svg"
           },
           "playedGames": 3,
-          "won": 1,
-          "draw": 2,
+          "won": 2,
+          "draw": 1,
           "lost": 0,
-          "points": 5,
-          "goalsFor": 7,
+          "points": 7,
+          "goalsFor": 9,
           "goalsAgainst": 3
         },
         {
@@ -3633,11 +3633,11 @@
           },
           "playedGames": 3,
           "won": 0,
-          "draw": 1,
-          "lost": 2,
-          "points": 1,
+          "draw": 0,
+          "lost": 3,
+          "points": 0,
           "goalsFor": 1,
-          "goalsAgainst": 9
+          "goalsAgainst": 11
         }
       ]
     },
