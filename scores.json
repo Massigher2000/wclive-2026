@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T20:50:23.031Z",
+  "updatedAt": "2026-06-26T21:55:36.294Z",
   "matches": [
     {
       "id": 537327,
@@ -1875,21 +1875,21 @@
         "tla": "FRA",
         "flag": "https://crests.football-data.org/773.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-26T19:00:00Z",
       "group": "GROUP_I",
       "venue": "TBD",
       "score": {
         "home": 1,
-        "away": 3
+        "away": 4
       },
       "halfTimeScore": {
         "home": 1,
         "away": 3
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -1906,21 +1906,21 @@
         "tla": "IRQ",
         "flag": "https://crests.football-data.org/iraq.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-26T19:00:00Z",
       "group": "GROUP_I",
       "venue": "TBD",
       "score": {
-        "home": 4,
+        "home": 5,
         "away": 0
       },
       "halfTimeScore": {
         "home": 1,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -3795,7 +3795,7 @@
           "draw": 0,
           "lost": 0,
           "points": 9,
-          "goalsFor": 9,
+          "goalsFor": 10,
           "goalsAgainst": 2
         },
         {
@@ -3812,7 +3812,7 @@
           "lost": 1,
           "points": 6,
           "goalsFor": 8,
-          "goalsAgainst": 6
+          "goalsAgainst": 7
         },
         {
           "position": 3,
@@ -3827,7 +3827,7 @@
           "draw": 0,
           "lost": 2,
           "points": 3,
-          "goalsFor": 6,
+          "goalsFor": 8,
           "goalsAgainst": 6
         },
         {
@@ -3844,7 +3844,7 @@
           "lost": 3,
           "points": 0,
           "goalsFor": 1,
-          "goalsAgainst": 10
+          "goalsAgainst": 12
         }
       ]
     },
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 2,
+    "liveMatches": 0,
     "upcomingMatches": 42,
-    "finishedMatches": 60
+    "finishedMatches": 62
   }
 }
