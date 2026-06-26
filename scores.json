@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T08:20:05.212Z",
+  "updatedAt": "2026-06-26T11:17:19.194Z",
   "matches": [
     {
       "id": 537327,
@@ -2236,16 +2236,16 @@
     {
       "id": 537417,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "South Africa",
+        "shortName": "South Africa",
+        "tla": "RSA",
+        "flag": "https://crests.football-data.org/9396.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Canada",
+        "shortName": "Canada",
+        "tla": "CAN",
+        "flag": "https://crests.football-data.org/canada.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2267,16 +2267,16 @@
     {
       "id": 537423,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "tla": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Japan",
+        "shortName": "Japan",
+        "tla": "JPN",
+        "flag": "https://crests.football-data.org/766.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2298,10 +2298,10 @@
     {
       "id": 537415,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "flag": "https://crests.football-data.org/759.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2329,16 +2329,16 @@
     {
       "id": 537418,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "tla": "NED",
+        "flag": "https://crests.football-data.org/8601.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "tla": "MAR",
+        "flag": "https://crests.football-data.org/morocco.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2422,10 +2422,10 @@
     {
       "id": 537425,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "tla": "MEX",
+        "flag": "https://crests.football-data.org/769.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2515,16 +2515,16 @@
     {
       "id": 537421,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "United States",
+        "shortName": "USA",
+        "tla": "USA",
+        "flag": "https://crests.football-data.org/usa.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Bosnia-Herzegovina",
+        "shortName": "Bosnia-H.",
+        "tla": "BIH",
+        "flag": "https://crests.football-data.org/bosnia.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2608,10 +2608,10 @@
     {
       "id": 537429,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "tla": "SUI",
+        "flag": "https://crests.football-data.org/788.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2639,10 +2639,10 @@
     {
       "id": 537428,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Australia",
+        "shortName": "Australia",
+        "tla": "AUS",
+        "flag": "https://crests.football-data.org/779.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2670,10 +2670,10 @@
     {
       "id": 537427,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "tla": "ARG",
+        "flag": "https://crests.football-data.org/762.png"
       },
       "awayTeam": {
         "name": null,
