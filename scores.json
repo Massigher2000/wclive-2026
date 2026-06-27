@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T20:57:23.778Z",
+  "updatedAt": "2026-06-27T21:57:13.130Z",
   "matches": [
     {
       "id": 537327,
@@ -446,7 +446,7 @@
       "awayTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "status": "FINISHED",
@@ -1184,7 +1184,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -1928,7 +1928,7 @@
       "homeTeam": {
         "name": "Uruguay",
         "shortName": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "flag": "https://crests.football-data.org/758.svg"
       },
       "awayTeam": {
@@ -2061,22 +2061,22 @@
         "tla": "ENG",
         "flag": "https://crests.football-data.org/770.svg"
       },
-      "status": "TIMED",
+      "status": "PAUSED",
       "minute": "90",
       "utcDate": "2026-06-27T21:00:00Z",
       "group": "GROUP_L",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537414,
@@ -2092,22 +2092,22 @@
         "tla": "GHA",
         "flag": "https://crests.football-data.org/ghana.svg"
       },
-      "status": "TIMED",
+      "status": "PAUSED",
       "minute": "90",
       "utcDate": "2026-06-27T21:00:00Z",
       "group": "GROUP_L",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537407,
@@ -2236,16 +2236,16 @@
     {
       "id": 537417,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "South Africa",
+        "shortName": "South Africa",
+        "tla": "RSA",
+        "flag": "https://crests.football-data.org/9396.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Canada",
+        "shortName": "Canada",
+        "tla": "CAN",
+        "flag": "https://crests.football-data.org/canada.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2267,16 +2267,16 @@
     {
       "id": 537423,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "tla": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Japan",
+        "shortName": "Japan",
+        "tla": "JPN",
+        "flag": "https://crests.football-data.org/766.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2298,10 +2298,10 @@
     {
       "id": 537415,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Germany",
+        "shortName": "Germany",
+        "tla": "GER",
+        "flag": "https://crests.football-data.org/759.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2329,16 +2329,16 @@
     {
       "id": 537418,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Netherlands",
+        "shortName": "Netherlands",
+        "tla": "NED",
+        "flag": "https://crests.football-data.org/8601.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "tla": "MAR",
+        "flag": "https://crests.football-data.org/morocco.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2360,10 +2360,10 @@
     {
       "id": 537424,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Ivory Coast",
+        "shortName": "Ivory Coast",
+        "tla": "CIV",
+        "flag": "https://crests.football-data.org/787.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2422,10 +2422,10 @@
     {
       "id": 537425,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "tla": "MEX",
+        "flag": "https://crests.football-data.org/769.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2515,16 +2515,16 @@
     {
       "id": 537421,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "United States",
+        "shortName": "USA",
+        "tla": "USA",
+        "flag": "https://crests.football-data.org/usa.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Bosnia-Herzegovina",
+        "shortName": "Bosnia-H.",
+        "tla": "BIH",
+        "flag": "https://crests.football-data.org/bosnia.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2608,10 +2608,10 @@
     {
       "id": 537429,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "tla": "SUI",
+        "flag": "https://crests.football-data.org/788.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2639,10 +2639,10 @@
     {
       "id": 537428,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Australia",
+        "shortName": "Australia",
+        "tla": "AUS",
+        "flag": "https://crests.football-data.org/779.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2670,10 +2670,10 @@
     {
       "id": 537427,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "tla": "ARG",
+        "flag": "https://crests.football-data.org/762.png"
       },
       "awayTeam": {
         "name": null,
@@ -3997,11 +3997,11 @@
             "tla": "ENG",
             "flag": "https://crests.football-data.org/770.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "won": 1,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 4,
+          "points": 5,
           "goalsFor": 4,
           "goalsAgainst": 2
         },
@@ -4013,11 +4013,11 @@
             "tla": "GHA",
             "flag": "https://crests.football-data.org/ghana.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "won": 1,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 4,
+          "points": 5,
           "goalsFor": 1,
           "goalsAgainst": 0
         },
@@ -4029,11 +4029,11 @@
             "tla": "CRO",
             "flag": "https://crests.football-data.org/799.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
-          "points": 3,
+          "points": 4,
           "goalsFor": 3,
           "goalsAgainst": 4
         },
@@ -4045,11 +4045,11 @@
             "tla": "PAN",
             "flag": "https://crests.football-data.org/panama.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 2
         }
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 0,
-    "upcomingMatches": 38,
+    "upcomingMatches": 36,
     "finishedMatches": 66
   }
 }
