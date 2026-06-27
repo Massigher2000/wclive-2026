@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T23:58:08.242Z",
+  "updatedAt": "2026-06-27T02:40:19.867Z",
   "matches": [
     {
       "id": 537327,
@@ -1937,22 +1937,22 @@
         "tla": "ESP",
         "flag": "https://crests.football-data.org/760.svg"
       },
-      "status": "TIMED",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-27T00:00:00Z",
       "group": "GROUP_H",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "isLive": false,
-      "isFinished": false,
-      "isScheduled": true
+      "isFinished": true,
+      "isScheduled": false
     },
     {
       "id": 537374,
@@ -1968,22 +1968,22 @@
         "tla": "KSA",
         "flag": "https://crests.football-data.org/saudi_arabia.svg"
       },
-      "status": "TIMED",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-27T00:00:00Z",
       "group": "GROUP_H",
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "isLive": false,
-      "isFinished": false,
-      "isScheduled": true
+      "isFinished": true,
+      "isScheduled": false
     },
     {
       "id": 537367,
@@ -3721,45 +3721,45 @@
             "tla": "ESP",
             "flag": "https://crests.football-data.org/760.svg"
           },
-          "playedGames": 2,
-          "won": 1,
+          "playedGames": 3,
+          "won": 2,
           "draw": 1,
           "lost": 0,
-          "points": 4,
-          "goalsFor": 4,
+          "points": 7,
+          "goalsFor": 5,
           "goalsAgainst": 0
         },
         {
           "position": 2,
-          "team": {
-            "name": "Uruguay",
-            "shortName": "Uruguay",
-            "tla": "URU",
-            "flag": "https://crests.football-data.org/758.svg"
-          },
-          "playedGames": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 3,
-          "goalsAgainst": 3
-        },
-        {
-          "position": 3,
           "team": {
             "name": "Cape Verde Islands",
             "shortName": "Cape Verde",
             "tla": "CPV",
             "flag": "https://crests.football-data.org/cape_verde.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "won": 0,
-          "draw": 2,
+          "draw": 3,
           "lost": 0,
-          "points": 2,
+          "points": 3,
           "goalsFor": 2,
           "goalsAgainst": 2
+        },
+        {
+          "position": 3,
+          "team": {
+            "name": "Uruguay",
+            "shortName": "Uruguay",
+            "tla": "URU",
+            "flag": "https://crests.football-data.org/758.svg"
+          },
+          "playedGames": 3,
+          "won": 0,
+          "draw": 2,
+          "lost": 1,
+          "points": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 4
         },
         {
           "position": 4,
@@ -3769,11 +3769,11 @@
             "tla": "KSA",
             "flag": "https://crests.football-data.org/saudi_arabia.svg"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 1,
-          "points": 1,
+          "points": 2,
           "goalsFor": 1,
           "goalsAgainst": 5
         }
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 0,
-    "upcomingMatches": 42,
-    "finishedMatches": 62
+    "upcomingMatches": 40,
+    "finishedMatches": 64
   }
 }
