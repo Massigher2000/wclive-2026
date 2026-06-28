@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T18:55:47.435Z",
+  "updatedAt": "2026-06-28T20:04:29.046Z",
   "matches": [
     {
       "id": 537327,
@@ -2247,22 +2247,22 @@
         "tla": "CAN",
         "flag": "https://crests.football-data.org/canada.svg"
       },
-      "status": "TIMED",
+      "status": "PAUSED",
       "minute": "90",
       "utcDate": "2026-06-28T19:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537423,
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 0,
-    "upcomingMatches": 32,
+    "upcomingMatches": 31,
     "finishedMatches": 72
   }
 }
