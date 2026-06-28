@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T23:54:30.149Z",
+  "updatedAt": "2026-06-28T01:58:14.847Z",
   "matches": [
     {
       "id": 537327,
@@ -2123,7 +2123,7 @@
         "tla": "POR",
         "flag": "https://crests.football-data.org/765.svg"
       },
-      "status": "LIVE",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-27T23:30:00Z",
       "group": "GROUP_K",
@@ -2133,11 +2133,11 @@
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "isLive": false,
-      "isFinished": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -2154,21 +2154,21 @@
         "tla": "UZB",
         "flag": "https://crests.football-data.org/8070.png"
       },
-      "status": "LIVE",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-06-27T23:30:00Z",
       "group": "GROUP_K",
       "venue": "TBD",
       "score": {
-        "home": 1,
+        "home": 3,
         "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "isLive": false,
-      "isFinished": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -3961,12 +3961,12 @@
             "flag": "https://crests.football-data.org/congo_dr.svg"
           },
           "playedGames": 3,
-          "won": 0,
-          "draw": 2,
+          "won": 1,
+          "draw": 1,
           "lost": 1,
-          "points": 2,
-          "goalsFor": 1,
-          "goalsAgainst": 2
+          "points": 4,
+          "goalsFor": 4,
+          "goalsAgainst": 3
         },
         {
           "position": 4,
@@ -3978,11 +3978,11 @@
           },
           "playedGames": 3,
           "won": 0,
-          "draw": 1,
-          "lost": 2,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 8
+          "draw": 0,
+          "lost": 3,
+          "points": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 11
         }
       ]
     },
@@ -4060,6 +4060,6 @@
     "totalMatches": 104,
     "liveMatches": 0,
     "upcomingMatches": 34,
-    "finishedMatches": 68
+    "finishedMatches": 70
   }
 }
