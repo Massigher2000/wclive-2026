@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T06:13:11.752Z",
+  "updatedAt": "2026-06-28T09:31:48.748Z",
   "matches": [
     {
       "id": 537327,
@@ -2247,7 +2247,7 @@
         "tla": "CAN",
         "flag": "https://crests.football-data.org/canada.svg"
       },
-      "status": "2026-06-29 19:00:00Z",
+      "status": "TIMED",
       "minute": "90",
       "utcDate": "2026-06-28T19:00:00Z",
       "group": null,
@@ -2262,7 +2262,7 @@
       },
       "isLive": false,
       "isFinished": false,
-      "isScheduled": false
+      "isScheduled": true
     },
     {
       "id": 537423,
@@ -2304,10 +2304,10 @@
         "flag": "https://crests.football-data.org/759.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Paraguay",
+        "shortName": "Paraguay",
+        "tla": "PAR",
+        "flag": "https://crests.football-data.org/761.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2366,10 +2366,10 @@
         "flag": "https://crests.football-data.org/787.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Norway",
+        "shortName": "Norway",
+        "tla": "NOR",
+        "flag": "https://crests.football-data.org/813.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2391,16 +2391,16 @@
     {
       "id": 537416,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "flag": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Sweden",
+        "shortName": "Sweden",
+        "tla": "SWE",
+        "flag": "https://crests.football-data.org/792.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2428,10 +2428,10 @@
         "flag": "https://crests.football-data.org/769.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Ecuador",
+        "shortName": "Ecuador",
+        "tla": "ECU",
+        "flag": "https://crests.football-data.org/791.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2453,16 +2453,16 @@
     {
       "id": 537426,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "England",
+        "shortName": "England",
+        "tla": "ENG",
+        "flag": "https://crests.football-data.org/770.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Congo DR",
+        "shortName": "Congo DR",
+        "tla": "COD",
+        "flag": "https://crests.football-data.org/congo_dr.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2484,16 +2484,16 @@
     {
       "id": 537422,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "flag": "https://crests.football-data.org/805.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Senegal",
+        "shortName": "Senegal",
+        "tla": "SEN",
+        "flag": "https://crests.football-data.org/senegal.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2546,16 +2546,16 @@
     {
       "id": 537420,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Spain",
+        "shortName": "Spain",
+        "tla": "ESP",
+        "flag": "https://crests.football-data.org/760.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Austria",
+        "shortName": "Austria",
+        "tla": "AUT",
+        "flag": "https://crests.football-data.org/816.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2577,16 +2577,16 @@
     {
       "id": 537419,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "tla": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Croatia",
+        "shortName": "Croatia",
+        "tla": "CRO",
+        "flag": "https://crests.football-data.org/799.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2614,10 +2614,10 @@
         "flag": "https://crests.football-data.org/788.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Algeria",
+        "shortName": "Algeria",
+        "tla": "ALG",
+        "flag": "https://crests.football-data.org/algeria.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2645,10 +2645,10 @@
         "flag": "https://crests.football-data.org/779.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "tla": "EGY",
+        "flag": "https://crests.football-data.org/825.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2676,10 +2676,10 @@
         "flag": "https://crests.football-data.org/762.png"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Cape Verde Islands",
+        "shortName": "Cape Verde",
+        "tla": "CPV",
+        "flag": "https://crests.football-data.org/cape_verde.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2701,16 +2701,16 @@
     {
       "id": 537430,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Colombia",
+        "shortName": "Colombia",
+        "tla": "COL",
+        "flag": "https://crests.football-data.org/818.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Ghana",
+        "shortName": "Ghana",
+        "tla": "GHA",
+        "flag": "https://crests.football-data.org/ghana.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 0,
-    "upcomingMatches": 31,
+    "upcomingMatches": 32,
     "finishedMatches": 72
   }
 }
