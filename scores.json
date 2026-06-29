@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T14:54:42.868Z",
+  "updatedAt": "2026-06-29T17:25:15.704Z",
   "matches": [
     {
       "id": 537327,
@@ -2278,22 +2278,22 @@
         "tla": "JPN",
         "flag": "https://crests.football-data.org/766.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-29T17:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
         "home": null,
         "away": null
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537415,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 31,
+    "liveMatches": 1,
+    "upcomingMatches": 30,
     "finishedMatches": 73
   }
 }
