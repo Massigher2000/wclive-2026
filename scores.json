@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T20:58:09.286Z",
+  "updatedAt": "2026-06-29T22:06:08.946Z",
   "matches": [
     {
       "id": 537327,
@@ -2315,12 +2315,12 @@
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 1,
+        "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "isLive": true,
       "isFinished": false,
