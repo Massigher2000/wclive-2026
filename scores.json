@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T04:35:09.215Z",
+  "updatedAt": "2026-06-30T08:07:27.278Z",
   "matches": [
     {
       "id": 537327,
@@ -2738,10 +2738,10 @@
         "flag": "https://crests.football-data.org/canada.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "tla": "MAR",
+        "flag": "https://crests.football-data.org/morocco.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2763,10 +2763,10 @@
     {
       "id": 537375,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Paraguay",
+        "shortName": "Paraguay",
+        "tla": "PAR",
+        "flag": "https://crests.football-data.org/761.svg"
       },
       "awayTeam": {
         "name": null,
@@ -2794,10 +2794,10 @@
     {
       "id": 537377,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "tla": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
       },
       "awayTeam": {
         "name": null,
