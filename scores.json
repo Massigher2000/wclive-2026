@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T21:05:15.330Z",
+  "updatedAt": "2026-06-30T22:20:38.159Z",
   "matches": [
     {
       "id": 537327,
@@ -2402,22 +2402,22 @@
         "tla": "SWE",
         "flag": "https://crests.football-data.org/792.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-06-30T21:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537425,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 27,
+    "liveMatches": 1,
+    "upcomingMatches": 26,
     "finishedMatches": 77
   }
 }
