@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T01:54:15.577Z",
+  "updatedAt": "2026-07-01T06:13:09.539Z",
   "matches": [
     {
       "id": 537327,
@@ -2433,21 +2433,21 @@
         "tla": "ECU",
         "flag": "https://crests.football-data.org/791.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-07-01T01:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": 0,
+        "home": 2,
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -2769,10 +2769,10 @@
         "flag": "https://crests.football-data.org/761.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "flag": "https://crests.football-data.org/773.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2800,10 +2800,10 @@
         "flag": "https://crests.football-data.org/764.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Norway",
+        "shortName": "Norway",
+        "tla": "NOR",
+        "flag": "https://crests.football-data.org/813.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 25,
-    "finishedMatches": 78
+    "finishedMatches": 79
   }
 }
