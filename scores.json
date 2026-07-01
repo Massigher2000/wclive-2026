@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T23:39:23.990Z",
+  "updatedAt": "2026-07-01T01:54:15.577Z",
   "matches": [
     {
       "id": 537327,
@@ -2433,22 +2433,22 @@
         "tla": "ECU",
         "flag": "https://crests.football-data.org/791.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-07-01T01:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
         "home": null,
         "away": null
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537426,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 26,
+    "liveMatches": 1,
+    "upcomingMatches": 25,
     "finishedMatches": 78
   }
 }
