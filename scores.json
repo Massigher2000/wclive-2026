@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T22:12:09.623Z",
+  "updatedAt": "2026-07-01T23:41:03.067Z",
   "matches": [
     {
       "id": 537327,
@@ -2495,21 +2495,21 @@
         "tla": "SEN",
         "flag": "https://crests.football-data.org/senegal.svg"
       },
-      "status": "IN_PLAY",
-      "minute": "EXTRA_TIME",
+      "status": "FINISHED",
+      "minute": "90",
       "utcDate": "2026-07-01T20:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": 2,
+        "home": 3,
         "away": 2
       },
       "halfTimeScore": {
         "home": 0,
         "away": 1
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 23,
-    "finishedMatches": 80
+    "finishedMatches": 81
   }
 }
