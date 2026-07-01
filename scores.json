@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T15:29:43.286Z",
+  "updatedAt": "2026-07-01T17:28:04.810Z",
   "matches": [
     {
       "id": 537327,
@@ -2464,22 +2464,22 @@
         "tla": "COD",
         "flag": "https://crests.football-data.org/congo_dr.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-07-01T16:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537422,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 25,
+    "liveMatches": 1,
+    "upcomingMatches": 24,
     "finishedMatches": 79
   }
 }
