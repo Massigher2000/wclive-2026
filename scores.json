@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T23:41:03.067Z",
+  "updatedAt": "2026-07-02T01:35:37.874Z",
   "matches": [
     {
       "id": 537327,
@@ -2496,7 +2496,7 @@
         "flag": "https://crests.football-data.org/senegal.svg"
       },
       "status": "FINISHED",
-      "minute": "90",
+      "minute": "EXTRA_TIME",
       "utcDate": "2026-07-01T20:00:00Z",
       "group": null,
       "venue": "TBD",
@@ -2526,22 +2526,22 @@
         "tla": "BIH",
         "flag": "https://crests.football-data.org/bosnia.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-07-02T00:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537420,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 23,
+    "liveMatches": 1,
+    "upcomingMatches": 22,
     "finishedMatches": 81
   }
 }
