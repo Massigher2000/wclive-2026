@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T05:38:27.767Z",
+  "updatedAt": "2026-07-02T08:31:08.185Z",
   "matches": [
     {
       "id": 537327,
@@ -2825,16 +2825,16 @@
     {
       "id": 537378,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "tla": "MEX",
+        "flag": "https://crests.football-data.org/769.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "England",
+        "shortName": "England",
+        "tla": "ENG",
+        "flag": "https://crests.football-data.org/770.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2887,16 +2887,16 @@
     {
       "id": 537380,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "United States",
+        "shortName": "USA",
+        "tla": "USA",
+        "flag": "https://crests.football-data.org/usa.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "flag": "https://crests.football-data.org/805.svg"
       },
       "status": "TIMED",
       "minute": "90",
