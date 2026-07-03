@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T18:49:38.155Z",
+  "updatedAt": "2026-07-03T20:04:58.683Z",
   "matches": [
     {
       "id": 537327,
@@ -2650,18 +2650,18 @@
         "tla": "EGY",
         "flag": "https://crests.football-data.org/825.svg"
       },
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "minute": "90",
       "utcDate": "2026-07-03T18:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "isLive": true,
       "isFinished": false,
@@ -4058,7 +4058,7 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 18,
     "finishedMatches": 85
   }
