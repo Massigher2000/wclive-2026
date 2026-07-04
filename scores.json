@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T04:05:00.295Z",
+  "updatedAt": "2026-07-04T06:55:00.229Z",
   "matches": [
     {
       "id": 537327,
@@ -2856,16 +2856,16 @@
     {
       "id": 537379,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Portugal",
+        "shortName": "Portugal",
+        "tla": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Spain",
+        "shortName": "Spain",
+        "tla": "ESP",
+        "flag": "https://crests.football-data.org/760.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2918,16 +2918,16 @@
     {
       "id": 537381,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "tla": "ARG",
+        "flag": "https://crests.football-data.org/762.png"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Egypt",
+        "shortName": "Egypt",
+        "tla": "EGY",
+        "flag": "https://crests.football-data.org/825.svg"
       },
       "status": "TIMED",
       "minute": "90",
@@ -2949,16 +2949,16 @@
     {
       "id": 537382,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "tla": "SUI",
+        "flag": "https://crests.football-data.org/788.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Colombia",
+        "shortName": "Colombia",
+        "tla": "COL",
+        "flag": "https://crests.football-data.org/818.svg"
       },
       "status": "TIMED",
       "minute": "90",
