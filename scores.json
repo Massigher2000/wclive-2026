@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T18:41:17.588Z",
+  "updatedAt": "2026-07-04T19:51:01.301Z",
   "matches": [
     {
       "id": 537327,
@@ -2743,21 +2743,21 @@
         "tla": "MAR",
         "flag": "https://crests.football-data.org/morocco.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-07-04T17:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
         "home": 0,
-        "away": 1
+        "away": 3
       },
       "halfTimeScore": {
         "home": 0,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 15,
-    "finishedMatches": 88
+    "finishedMatches": 89
   }
 }
