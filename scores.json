@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T21:34:28.786Z",
+  "updatedAt": "2026-07-04T22:32:22.523Z",
   "matches": [
     {
       "id": 537327,
@@ -2774,7 +2774,7 @@
         "tla": "FRA",
         "flag": "https://crests.football-data.org/773.svg"
       },
-      "status": "LIVE",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-07-04T21:00:00Z",
       "group": null,
@@ -2784,10 +2784,10 @@
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
       "isScheduled": false
     },
@@ -4058,7 +4058,7 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
+    "liveMatches": 1,
     "upcomingMatches": 14,
     "finishedMatches": 89
   }
