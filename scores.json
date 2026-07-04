@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T00:18:37.316Z",
+  "updatedAt": "2026-07-04T04:05:00.295Z",
   "matches": [
     {
       "id": 537327,
@@ -2681,21 +2681,21 @@
         "tla": "CPV",
         "flag": "https://crests.football-data.org/cape_verde.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "EXTRA_TIME",
       "utcDate": "2026-07-03T22:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": 2,
-        "away": 1
+        "home": 3,
+        "away": 2
       },
       "halfTimeScore": {
         "home": 1,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -2712,22 +2712,22 @@
         "tla": "GHA",
         "flag": "https://crests.football-data.org/ghana.svg"
       },
-      "status": "TIMED",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-07-04T01:30:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "isLive": false,
-      "isFinished": false,
-      "isScheduled": true
+      "isFinished": true,
+      "isScheduled": false
     },
     {
       "id": 537376,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
-    "upcomingMatches": 17,
-    "finishedMatches": 86
+    "liveMatches": 0,
+    "upcomingMatches": 16,
+    "finishedMatches": 88
   }
 }
