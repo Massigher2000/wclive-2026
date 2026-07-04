@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T20:38:23.633Z",
+  "updatedAt": "2026-07-04T21:34:28.786Z",
   "matches": [
     {
       "id": 537327,
@@ -2774,14 +2774,14 @@
         "tla": "FRA",
         "flag": "https://crests.football-data.org/773.svg"
       },
-      "status": "TIMED",
+      "status": "LIVE",
       "minute": "90",
       "utcDate": "2026-07-04T21:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
         "home": null,
@@ -2789,7 +2789,7 @@
       },
       "isLive": false,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537377,
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 0,
-    "upcomingMatches": 15,
+    "upcomingMatches": 14,
     "finishedMatches": 89
   }
 }
