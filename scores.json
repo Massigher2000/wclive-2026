@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T05:09:44.297Z",
+  "updatedAt": "2026-07-05T08:12:08.089Z",
   "matches": [
     {
       "id": 537327,
@@ -2980,16 +2980,16 @@
     {
       "id": 537383,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "France",
+        "shortName": "France",
+        "tla": "FRA",
+        "flag": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Morocco",
+        "shortName": "Morocco",
+        "tla": "MAR",
+        "flag": "https://crests.football-data.org/morocco.svg"
       },
       "status": "TIMED",
       "minute": "90",
