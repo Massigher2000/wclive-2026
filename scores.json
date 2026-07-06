@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T23:40:28.212Z",
+  "updatedAt": "2026-07-06T01:21:06.598Z",
   "matches": [
     {
       "id": 537327,
@@ -2836,20 +2836,20 @@
         "tla": "ENG",
         "flag": "https://crests.football-data.org/770.svg"
       },
-      "status": "2026-07-06 01:00:00Z",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-07-06T01:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
         "home": null,
         "away": null
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
       "isScheduled": false
     },
@@ -4058,7 +4058,7 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
+    "liveMatches": 1,
     "upcomingMatches": 12,
     "finishedMatches": 91
   }
