@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T20:18:43.565Z",
+  "updatedAt": "2026-07-06T21:49:37.140Z",
   "matches": [
     {
       "id": 537327,
@@ -2867,21 +2867,21 @@
         "tla": "ESP",
         "flag": "https://crests.football-data.org/760.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-07-06T19:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "halfTimeScore": {
         "home": 0,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 11,
-    "finishedMatches": 92
+    "finishedMatches": 93
   }
 }
