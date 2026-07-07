@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T22:41:13.590Z",
+  "updatedAt": "2026-07-07T23:34:03.350Z",
   "matches": [
     {
       "id": 537327,
@@ -2960,21 +2960,21 @@
         "tla": "COL",
         "flag": "https://crests.football-data.org/818.svg"
       },
-      "status": "PAUSED",
-      "minute": "EXTRA_TIME",
+      "status": "FINISHED",
+      "minute": "PENALTY_SHOOTOUT",
       "utcDate": "2026-07-07T20:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 4,
+        "away": 3
       },
       "halfTimeScore": {
         "home": 0,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4060,6 +4060,6 @@
     "totalMatches": 104,
     "liveMatches": 0,
     "upcomingMatches": 8,
-    "finishedMatches": 95
+    "finishedMatches": 96
   }
 }
