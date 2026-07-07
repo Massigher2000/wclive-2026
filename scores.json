@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T05:13:17.883Z",
+  "updatedAt": "2026-07-07T08:40:40.423Z",
   "matches": [
     {
       "id": 537327,
@@ -3011,16 +3011,16 @@
     {
       "id": 537384,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Spain",
+        "shortName": "Spain",
+        "tla": "ESP",
+        "flag": "https://crests.football-data.org/760.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Belgium",
+        "shortName": "Belgium",
+        "tla": "BEL",
+        "flag": "https://crests.football-data.org/805.svg"
       },
       "status": "TIMED",
       "minute": "90",
