@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T01:25:47.149Z",
+  "updatedAt": "2026-07-07T05:13:17.883Z",
   "matches": [
     {
       "id": 537327,
@@ -2898,21 +2898,21 @@
         "tla": "BEL",
         "flag": "https://crests.football-data.org/805.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-07-07T00:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
         "home": 1,
-        "away": 3
+        "away": 4
       },
       "halfTimeScore": {
         "home": 1,
         "away": 2
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 10,
-    "finishedMatches": 93
+    "finishedMatches": 94
   }
 }
