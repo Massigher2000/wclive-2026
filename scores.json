@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T21:38:44.397Z",
+  "updatedAt": "2026-07-07T22:41:13.590Z",
   "matches": [
     {
       "id": 537327,
@@ -2960,8 +2960,8 @@
         "tla": "COL",
         "flag": "https://crests.football-data.org/818.svg"
       },
-      "status": "IN_PLAY",
-      "minute": "90",
+      "status": "PAUSED",
+      "minute": "EXTRA_TIME",
       "utcDate": "2026-07-07T20:00:00Z",
       "group": null,
       "venue": "TBD",
@@ -4058,7 +4058,7 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 8,
     "finishedMatches": 95
   }
