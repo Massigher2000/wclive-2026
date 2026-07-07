@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T20:09:22.146Z",
+  "updatedAt": "2026-07-07T21:38:44.397Z",
   "matches": [
     {
       "id": 537327,
@@ -2970,8 +2970,8 @@
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "isLive": true,
       "isFinished": false,
