@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T18:08:32.376Z",
+  "updatedAt": "2026-07-07T20:09:22.146Z",
   "matches": [
     {
       "id": 537327,
@@ -2929,7 +2929,7 @@
         "tla": "EGY",
         "flag": "https://crests.football-data.org/825.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-07-07T16:00:00Z",
       "group": null,
@@ -2942,8 +2942,8 @@
         "home": 0,
         "away": 1
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -2960,22 +2960,22 @@
         "tla": "COL",
         "flag": "https://crests.football-data.org/818.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-07-07T20:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
         "home": null,
         "away": null
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537383,
@@ -4059,7 +4059,7 @@
   "meta": {
     "totalMatches": 104,
     "liveMatches": 1,
-    "upcomingMatches": 9,
-    "finishedMatches": 94
+    "upcomingMatches": 8,
+    "finishedMatches": 95
   }
 }
