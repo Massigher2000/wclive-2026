@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T04:22:19.851Z",
+  "updatedAt": "2026-07-08T06:41:32.264Z",
   "matches": [
     {
       "id": 537327,
@@ -3073,16 +3073,16 @@
     {
       "id": 537386,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Argentina",
+        "shortName": "Argentina",
+        "tla": "ARG",
+        "flag": "https://crests.football-data.org/762.png"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Switzerland",
+        "shortName": "Switzerland",
+        "tla": "SUI",
+        "flag": "https://crests.football-data.org/788.svg"
       },
       "status": "TIMED",
       "minute": "90",
