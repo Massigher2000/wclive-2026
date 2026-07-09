@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T21:39:06.716Z",
+  "updatedAt": "2026-07-09T22:52:19.047Z",
   "matches": [
     {
       "id": 537327,
@@ -2991,7 +2991,7 @@
         "tla": "MAR",
         "flag": "https://crests.football-data.org/morocco.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-07-09T20:00:00Z",
       "group": null,
@@ -3004,8 +3004,8 @@
         "home": 0,
         "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 7,
-    "finishedMatches": 96
+    "finishedMatches": 97
   }
 }
