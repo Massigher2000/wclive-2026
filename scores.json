@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T05:58:34.751Z",
+  "updatedAt": "2026-07-11T07:48:37.333Z",
   "matches": [
     {
       "id": 537327,
@@ -3110,10 +3110,10 @@
         "flag": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "flag": ""
+        "name": "Spain",
+        "shortName": "Spain",
+        "tla": "ESP",
+        "flag": "https://crests.football-data.org/760.svg"
       },
       "status": "TIMED",
       "minute": "90",
