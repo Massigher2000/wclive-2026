@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T01:14:36.978Z",
+  "updatedAt": "2026-07-12T04:38:25.081Z",
   "matches": [
     {
       "id": 537327,
@@ -3084,21 +3084,21 @@
         "tla": "SUI",
         "flag": "https://crests.football-data.org/788.svg"
       },
-      "status": "IN_PLAY",
-      "minute": "90",
+      "status": "FINISHED",
+      "minute": "EXTRA_TIME",
       "utcDate": "2026-07-12T01:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": 0,
-        "away": 0
+        "home": 3,
+        "away": 1
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 4,
-    "finishedMatches": 98
+    "finishedMatches": 99
   }
 }
