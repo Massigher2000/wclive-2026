@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T23:50:59.371Z",
+  "updatedAt": "2026-07-12T01:14:36.978Z",
   "matches": [
     {
       "id": 537327,
@@ -3053,7 +3053,7 @@
         "tla": "ENG",
         "flag": "https://crests.football-data.org/770.svg"
       },
-      "status": "PAUSED",
+      "status": "FINISHED",
       "minute": "EXTRA_TIME",
       "utcDate": "2026-07-11T21:00:00Z",
       "group": null,
@@ -3066,8 +3066,8 @@
         "home": 1,
         "away": 1
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -3084,22 +3084,22 @@
         "tla": "SUI",
         "flag": "https://crests.football-data.org/788.svg"
       },
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-07-12T01:00:00Z",
       "group": null,
       "venue": "TBD",
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTimeScore": {
         "home": null,
         "away": null
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
-      "isScheduled": true
+      "isScheduled": false
     },
     {
       "id": 537387,
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
-    "upcomingMatches": 5,
-    "finishedMatches": 97
+    "liveMatches": 1,
+    "upcomingMatches": 4,
+    "finishedMatches": 98
   }
 }
