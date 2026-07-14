@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T20:58:41.749Z",
+  "updatedAt": "2026-07-14T21:54:23.028Z",
   "matches": [
     {
       "id": 537327,
@@ -3115,7 +3115,7 @@
         "tla": "ESP",
         "flag": "https://crests.football-data.org/760.svg"
       },
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": "90",
       "utcDate": "2026-07-14T19:00:00Z",
       "group": null,
@@ -3128,8 +3128,8 @@
         "home": 0,
         "away": 1
       },
-      "isLive": true,
-      "isFinished": false,
+      "isLive": false,
+      "isFinished": true,
       "isScheduled": false
     },
     {
@@ -4058,8 +4058,8 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 1,
+    "liveMatches": 0,
     "upcomingMatches": 3,
-    "finishedMatches": 100
+    "finishedMatches": 101
   }
 }
