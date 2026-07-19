@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T22:01:30.966Z",
+  "updatedAt": "2026-07-19T22:56:01.078Z",
   "matches": [
     {
       "id": 537327,
@@ -3208,8 +3208,8 @@
         "tla": "ARG",
         "flag": "https://crests.football-data.org/762.png"
       },
-      "status": "LIVE",
-      "minute": "90",
+      "status": "FINISHED",
+      "minute": "EXTRA_TIME",
       "utcDate": "2026-07-19T19:00:00Z",
       "group": null,
       "venue": "TBD",
@@ -3222,7 +3222,7 @@
         "away": 0
       },
       "isLive": false,
-      "isFinished": false,
+      "isFinished": true,
       "isScheduled": false
     }
   ],
@@ -4060,6 +4060,6 @@
     "totalMatches": 104,
     "liveMatches": 0,
     "upcomingMatches": 0,
-    "finishedMatches": 103
+    "finishedMatches": 104
   }
 }
