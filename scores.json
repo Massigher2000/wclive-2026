@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T20:12:02.210Z",
+  "updatedAt": "2026-07-19T21:05:10.073Z",
   "matches": [
     {
       "id": 537327,
@@ -3208,7 +3208,7 @@
         "tla": "ARG",
         "flag": "https://crests.football-data.org/762.png"
       },
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": "90",
       "utcDate": "2026-07-19T19:00:00Z",
       "group": null,
@@ -4058,7 +4058,7 @@
   ],
   "meta": {
     "totalMatches": 104,
-    "liveMatches": 0,
+    "liveMatches": 1,
     "upcomingMatches": 0,
     "finishedMatches": 103
   }
