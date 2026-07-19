@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T19:18:42.243Z",
+  "updatedAt": "2026-07-19T20:12:02.210Z",
   "matches": [
     {
       "id": 537327,
@@ -3208,7 +3208,7 @@
         "tla": "ARG",
         "flag": "https://crests.football-data.org/762.png"
       },
-      "status": "LIVE",
+      "status": "PAUSED",
       "minute": "90",
       "utcDate": "2026-07-19T19:00:00Z",
       "group": null,
@@ -3218,10 +3218,10 @@
         "away": 0
       },
       "halfTimeScore": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "isLive": false,
+      "isLive": true,
       "isFinished": false,
       "isScheduled": false
     }
